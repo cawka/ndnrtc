@@ -1,0 +1,10 @@
+ndn-cpp/c/encoding/binary-xml-decoder.lo \
+  ndn-cpp/c/encoding/binary-xml-decoder.o:  \
+ ndn-cpp/c/encoding/binary-xml-decoder.c ndn-cpp/c/encoding/binary-xml.h \
+  ndn-cpp/c/encoding/binary-xml-decoder.h ndn-cpp/c/encoding/../errors.h
+
+ndn-cpp/c/encoding/binary-xml.h:
+
+ndn-cpp/c/encoding/binary-xml-decoder.h:
+
+ndn-cpp/c/encoding/../errors.h:

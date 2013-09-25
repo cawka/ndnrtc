@@ -1,0 +1,6 @@
+ndn-cpp/util/logging.lo ndn-cpp/util/logging.o: ndn-cpp/util/logging.cpp \
+  ndn-cpp/util/logging.hpp ndn-cpp/util/../../config.h
+
+ndn-cpp/util/logging.hpp:
+
+ndn-cpp/util/../../config.h:
