@@ -34,7 +34,7 @@ public:
      * Create a new Name::Component, copying the given value.
      * @param value The value byte array.
      */
-    Component(const std::vector<unsigned char>& value) 
+    Component(const std::vector<uint8_t>& value) 
     : value_(value)
     {
     }
@@ -44,7 +44,7 @@ public:
      * @param value Pointer to the value byte array.
      * @param valueLen Length of value.
      */
-    Component(const unsigned char *value, unsigned int valueLen) 
+    Component(const uint8_t *value, size_t valueLen) 
     : value_(value, valueLen)
     {
     }
@@ -68,13 +68,36 @@ public:
     {
       componentStruct.valueLength = value_.size(); 
       if (value_.size() > 0)
-        componentStruct.value = (unsigned char*)value_.buf();
+        componentStruct.value = (uint8_t*)value_.buf();
       else
         componentStruct.value = 0;
     }
   
     const Blob& 
     getValue() const { return value_; }
+
+    /**
+     * Write this component value to result, escaping characters according to the NDN URI Scheme.
+     * This also adds "..." to a value with zero or more ".".
+     * @param value the buffer with the value to escape
+     * @param result the string stream to write to.
+     */
+    void 
+    toEscapedString(std::ostringstream& result) const
+    {
+      Name::toEscapedString(*value_, result);
+    }
+
+    /**
+     * Convert this component value by escaping characters according to the NDN URI Scheme.
+     * This also adds "..." to a value with zero or more ".".
+     * @return The escaped string.
+     */
+    std::string
+    toEscapedString() const
+    {
+      return Name::toEscapedString(*value_);
+    }
     
     /**
      * Make a component value by decoding the escapedString between beginOffset and endOffset according to the NDN URI Scheme.
@@ -86,7 +109,7 @@ public:
      * @return The component value as a Blob, or a Blob with a null pointer if escapedString is not a valid escaped component.
      */
     static Blob 
-    makeFromEscapedString(const char *escapedString, unsigned int beginOffset, unsigned int endOffset);
+    makeFromEscapedString(const char *escapedString, size_t beginOffset, size_t endOffset);
     
     /**
      * Make a component as the encoded segment number.
@@ -119,9 +142,18 @@ public:
    * Parse the uri according to the NDN URI Scheme and create the name with the components.
    * @param uri The URI string.
    */
-  Name(const char *uri)
+  Name(const char* uri)
   {
     set(uri);
+  }
+  
+  /**
+   * Parse the uri according to the NDN URI Scheme and create the name with the components.
+   * @param uri The URI string.
+   */
+  Name(const std::string& uri)
+  {
+    set(uri.c_str());
   }
   
   /**
@@ -147,27 +179,101 @@ public:
   set(const char *uri);  
 
   /**
-   * Add a new component, copying from value of length valueLength.
+   * Append a new component, copying from value of length valueLength.
+   * @return This name so that you can chain calls to append.
    */
-  void 
-  addComponent(const unsigned char *value, unsigned int valueLength) 
+  Name& 
+  append(const uint8_t *value, size_t valueLength) 
   {
     components_.push_back(Component(value, valueLength));
+    return *this;
   }
 
   /**
-   * Add a new component, copying from value.
+   * Append a new component, copying from value.
+   * @return This name so that you can chain calls to append.
    */
-  void 
-  addComponent(const std::vector<unsigned char>& value) 
+  Name& 
+  append(const std::vector<uint8_t>& value) 
   {
     components_.push_back(value);
+    return *this;
   }
   
-  void 
-  addComponent(const Blob &value)
+  Name& 
+  append(const Blob &value)
   {
     components_.push_back(value);
+    return *this;
+  }
+  
+  Name& 
+  append(const Component &value)
+  {
+    components_.push_back(value);
+    return *this;
+  }
+  
+  /**
+   * Append the components of the given name to this name.
+   * @param name The Name with components to append.
+   * @return This name so that you can chain calls to append.
+   */
+  Name&
+  append(const Name& name);
+  
+  /**
+   * @deprecated Use append.
+   */
+  Name& 
+  appendComponent(const uint8_t *value, size_t valueLength) 
+  {
+    return append(value, valueLength);
+  }
+
+  /**
+   * @deprecated Use append.
+   */
+  Name& 
+  appendComponent(const std::vector<uint8_t>& value) 
+  {
+    return append(value);
+  }
+  
+  /**
+   * @deprecated Use append.
+   */
+  Name& 
+  appendComponent(const Blob &value)
+  {
+    return append(value);
+  }
+
+  /**
+   * @deprecated Use append.
+   */
+  Name& 
+  addComponent(const uint8_t *value, size_t valueLength) 
+  {
+    return append(value, valueLength);
+  }
+
+  /**
+   * @deprecated Use append.
+   */
+  Name& 
+  addComponent(const std::vector<uint8_t>& value) 
+  {
+    return append(value);
+  }
+  
+  /**
+   * @deprecated Use append.
+   */
+  Name& 
+  addComponent(const Blob &value)
+  {
+    return append(value);
   }
   
   /**
@@ -182,13 +288,41 @@ public:
    * Get the number of components.
    * @return The number of components.
    */
-  unsigned int 
+  size_t 
   getComponentCount() const {
     return components_.size();
   }
   
   const Component& 
-  getComponent(unsigned int i) const { return components_[i]; }
+  getComponent(size_t i) const { return components_[i]; }
+  
+  /**
+   * Get a new name, constructed as a subset of components.
+   * @param iStartComponent The index if the first component to get.
+   * @param nComponents The number of components starting at iStartComponent.
+   * @return A new name.
+   */
+  Name
+  getSubName(size_t iStartComponent, size_t nComponents) const;
+
+  /**
+   * Get a new name, constructed as a subset of components starting at iStartComponent until the end of the name.
+   * @param iStartComponent The index if the first component to get.
+   * @return A new name.
+   */
+  Name
+  getSubName(size_t iStartComponent) const;
+  
+  /**
+   * Return a new Name with the first nComponents components of this Name.
+   * @param nComponents The number of prefix components.
+   * @return A new Name.
+   */
+  Name
+  getPrefix(size_t nComponents) const
+  {
+    return getSubName(0, nComponents);
+  }
   
   /**
    * Encode this name as a URI.
@@ -205,16 +339,26 @@ public:
   {
     return toUri();
   }
-  
+
   /**
    * Append a component with the encoded segment number.
    * @param segment The segment number.
-   */
-  void 
+   * @return This name so that you can chain calls to append.
+   */  
+  Name& 
   appendSegment(unsigned long segment)
   {
     components_.push_back(Component(Component::makeSegment(segment)));
+    return *this;
   }
+  
+  /**
+   * Check if this name has the same component count and components as the given name.
+   * @param name The Name to check.
+   * @return true if the names are equal, otherwise false.
+   */
+  bool
+  equals(const Name& name) const;
   
   /**
    * Check if the N components of this name are the same as the first N components of the given name.
@@ -231,7 +375,16 @@ public:
    * @param result the string stream to write to.
    */
   static void 
-  toEscapedString(const std::vector<unsigned char>& value, std::ostringstream& result);
+  toEscapedString(const std::vector<uint8_t>& value, std::ostringstream& result);
+
+  /**
+   * Convert the value by escaping characters according to the NDN URI Scheme.
+   * This also adds "..." to a value with zero or more ".".
+   * @param value the buffer with the value to escape
+   * @return The escaped string.
+   */
+  static std::string
+  toEscapedString(const std::vector<uint8_t>& value);
 
 private:
   std::vector<Component> components_;

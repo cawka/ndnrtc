@@ -15,7 +15,8 @@
 namespace ndn {
 
 /**
- * A Signature is an abstract base class providing an methods to work with the signature information in a Data packet.
+ * A Signature is an abstract base class providing methods to work with the signature information in a Data packet.
+ * You must create an object of a subclass, for example Sha256WithRsaSignature.
  */
 class Signature {
 public:
@@ -98,10 +99,10 @@ public:
   setFreshnessSeconds(int freshnessSeconds) { freshnessSeconds_ = freshnessSeconds; }
   
   void 
-  setFinalBlockID(const std::vector<unsigned char>& finalBlockID) { finalBlockID_ = Name::Component(finalBlockID); }
+  setFinalBlockID(const std::vector<uint8_t>& finalBlockID) { finalBlockID_ = Name::Component(finalBlockID); }
   
   void 
-  setFinalBlockID(const unsigned char* finalBlockID, unsigned int finalBlockIdLength) 
+  setFinalBlockID(const uint8_t* finalBlockID, size_t finalBlockIdLength) 
   { 
     finalBlockID_ = Name::Component(finalBlockID, finalBlockIdLength); 
   }
@@ -142,7 +143,7 @@ public:
    * @param wireFormat A WireFormat object used to decode the input. If omitted, use WireFormat getDefaultWireFormat().
    */
   void 
-  wireDecode(const unsigned char* input, unsigned int inputLength, WireFormat& wireFormat = *WireFormat::getDefaultWireFormat());
+  wireDecode(const uint8_t* input, size_t inputLength, WireFormat& wireFormat = *WireFormat::getDefaultWireFormat());
   
   /**
    * Decode the input using a particular wire format and update this Data. Also, set the wireEncoding field to the input.
@@ -150,7 +151,7 @@ public:
    * @param wireFormat A WireFormat object used to decode the input. If omitted, use WireFormat getDefaultWireFormat().
    */
   void 
-  wireDecode(const std::vector<unsigned char>& input, WireFormat& wireFormat = *WireFormat::getDefaultWireFormat()) 
+  wireDecode(const std::vector<uint8_t>& input, WireFormat& wireFormat = *WireFormat::getDefaultWireFormat()) 
   {
     wireDecode(&input[0], input.size(), wireFormat);
   }
@@ -250,14 +251,14 @@ public:
    * @param content A vector whose contents are copied.
    */
   void 
-  setContent(const std::vector<unsigned char>& content) 
+  setContent(const std::vector<uint8_t>& content) 
   { 
     content_ = content; 
     onChanged();
   }
   
   void 
-  setContent(const unsigned char* content, unsigned int contentLength) 
+  setContent(const uint8_t* content, size_t contentLength) 
   { 
     content_ = Blob(content, contentLength); 
     onChanged();
@@ -269,14 +270,14 @@ public:
    * @param content A pointer to a vector with the byte array.  This takes another reference and does not copy the bytes.
    */
   void 
-  setContent(const ptr_lib::shared_ptr<std::vector<unsigned char> > &content) 
+  setContent(const ptr_lib::shared_ptr<std::vector<uint8_t> > &content) 
   { 
     content_ = content;
     onChanged();
   }
   
   void 
-  setContent(const ptr_lib::shared_ptr<const std::vector<unsigned char> > &content) 
+  setContent(const ptr_lib::shared_ptr<const std::vector<uint8_t> > &content) 
   { 
     content_ = content;
     onChanged();

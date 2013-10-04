@@ -5,16 +5,18 @@ ndn-cpp/encoding/binary-xml-element-reader.lo \
   ndn-cpp/encoding/../c/encoding/binary-xml-element-reader.h \
   ndn-cpp/encoding/../c/encoding/../errors.h \
   ndn-cpp/encoding/../c/encoding/binary-xml-structure-decoder.h \
-  ndn-cpp/encoding/../c/encoding/../util/dynamic-uchar-array.h \
-  ndn-cpp/encoding/../c/encoding/../util/../errors.h \
-  ndn-cpp/encoding/../c/encoding/../util/ndn_memory.h \
-  ndn-cpp/encoding/../c/encoding/../util/../../../config.h \
+  ndn-cpp/encoding/../c/encoding/../common.h \
+  ndn-cpp/encoding/../c/encoding/../../../config.h /usr/include/stdint.h \
   /usr/include/memory.h /usr/include/string.h /usr/include/_types.h \
   /usr/include/sys/_types.h /usr/include/sys/cdefs.h \
   /usr/include/sys/_symbol_aliasing.h \
   /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
   /usr/include/i386/_types.h /usr/include/Availability.h \
-  /usr/include/AvailabilityInternal.h /usr/include/strings.h
+  /usr/include/AvailabilityInternal.h /usr/include/strings.h \
+  ndn-cpp/encoding/../c/encoding/../util/dynamic-uint8-array.h \
+  ndn-cpp/encoding/../c/encoding/../util/../errors.h \
+  ndn-cpp/encoding/../c/encoding/../util/ndn_memory.h \
+  ndn-cpp/encoding/../c/encoding/../util/../common.h
 
 ndn-cpp/encoding/binary-xml-element-reader.hpp:
 
@@ -24,13 +26,11 @@ ndn-cpp/encoding/../c/encoding/../errors.h:
 
 ndn-cpp/encoding/../c/encoding/binary-xml-structure-decoder.h:
 
-ndn-cpp/encoding/../c/encoding/../util/dynamic-uchar-array.h:
+ndn-cpp/encoding/../c/encoding/../common.h:
 
-ndn-cpp/encoding/../c/encoding/../util/../errors.h:
+ndn-cpp/encoding/../c/encoding/../../../config.h:
 
-ndn-cpp/encoding/../c/encoding/../util/ndn_memory.h:
-
-ndn-cpp/encoding/../c/encoding/../util/../../../config.h:
+/usr/include/stdint.h:
 
 /usr/include/memory.h:
 
@@ -55,3 +55,11 @@ ndn-cpp/encoding/../c/encoding/../util/../../../config.h:
 /usr/include/AvailabilityInternal.h:
 
 /usr/include/strings.h:
+
+ndn-cpp/encoding/../c/encoding/../util/dynamic-uint8-array.h:
+
+ndn-cpp/encoding/../c/encoding/../util/../errors.h:
+
+ndn-cpp/encoding/../c/encoding/../util/ndn_memory.h:
+
+ndn-cpp/encoding/../c/encoding/../util/../common.h:

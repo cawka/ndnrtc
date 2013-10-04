@@ -8,7 +8,8 @@
 #define NDN_COMMON_HPP
 
 #include <vector>
-#include "../config.h"
+// common.h includes config.h.
+#include "c/common.h"
 
 // Depending on where ./configure found shared_ptr, define the ptr_lib namespace.
 // We always use ndn::ptr_lib.
@@ -57,7 +58,7 @@ namespace ndn {
  * @return Hex string.
  */
 std::string 
-toHex(const std::vector<unsigned char>& array);
+toHex(const std::vector<uint8_t>& array);
 
 }
 

@@ -75,7 +75,8 @@ ndn-cpp/encoding/wire-format.lo ndn-cpp/encoding/wire-format.o:  \
   ndn-cpp/encoding/wire-format.hpp ndn-cpp/encoding/../common.hpp \
   /usr/include/c++/4.2.1/vector /usr/include/c++/4.2.1/bits/stl_vector.h \
   /usr/include/c++/4.2.1/bits/stl_bvector.h \
-  /usr/include/c++/4.2.1/bits/vector.tcc ndn-cpp/encoding/../../config.h \
+  /usr/include/c++/4.2.1/bits/vector.tcc ndn-cpp/encoding/../c/common.h \
+  ndn-cpp/encoding/../c/../../config.h /usr/include/memory.h \
   /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
@@ -580,7 +581,11 @@ ndn-cpp/encoding/../common.hpp:
 
 /usr/include/c++/4.2.1/bits/vector.tcc:
 
-ndn-cpp/encoding/../../config.h:
+ndn-cpp/encoding/../c/common.h:
+
+ndn-cpp/encoding/../c/../../config.h:
+
+/usr/include/memory.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 

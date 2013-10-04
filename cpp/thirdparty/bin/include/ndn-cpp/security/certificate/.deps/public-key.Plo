@@ -96,13 +96,15 @@ ndn-cpp/security/certificate/public-key.lo \
   /usr/include/openssl/pq_compat.h /usr/include/openssl/tls1.h \
   /usr/include/openssl/dtls1.h /usr/include/openssl/pqueue.h \
   /usr/include/sys/time.h /usr/include/openssl/ssl23.h \
-  ndn-cpp/security/certificate/public-key.hpp \
+  ndn-cpp/security/certificate/../../c/util/../common.h \
+  ndn-cpp/security/certificate/../../c/util/../../../config.h \
+  /usr/include/memory.h ndn-cpp/security/certificate/public-key.hpp \
   ndn-cpp/security/certificate/../../util/blob.hpp \
   ndn-cpp/security/certificate/../../util/../common.hpp \
   /usr/include/c++/4.2.1/vector /usr/include/c++/4.2.1/bits/stl_vector.h \
   /usr/include/c++/4.2.1/bits/stl_bvector.h \
   /usr/include/c++/4.2.1/bits/vector.tcc \
-  ndn-cpp/security/certificate/../../util/../../config.h \
+  ndn-cpp/security/certificate/../../util/../c/common.h \
   /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
@@ -681,6 +683,12 @@ ndn-cpp/security/certificate/../../c/util/crypto.h:
 
 /usr/include/openssl/ssl23.h:
 
+ndn-cpp/security/certificate/../../c/util/../common.h:
+
+ndn-cpp/security/certificate/../../c/util/../../../config.h:
+
+/usr/include/memory.h:
+
 ndn-cpp/security/certificate/public-key.hpp:
 
 ndn-cpp/security/certificate/../../util/blob.hpp:
@@ -695,7 +703,7 @@ ndn-cpp/security/certificate/../../util/../common.hpp:
 
 /usr/include/c++/4.2.1/bits/vector.tcc:
 
-ndn-cpp/security/certificate/../../util/../../config.h:
+ndn-cpp/security/certificate/../../util/../c/common.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 

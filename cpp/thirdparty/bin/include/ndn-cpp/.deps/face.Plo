@@ -62,7 +62,8 @@ ndn-cpp/face.lo ndn-cpp/face.o: ndn-cpp/face.cpp ndn-cpp/face.hpp \
   /usr/include/c++/4.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/4.2.1/bits/stl_vector.h \
   /usr/include/c++/4.2.1/bits/stl_bvector.h \
-  /usr/include/c++/4.2.1/bits/vector.tcc ndn-cpp/../config.h \
+  /usr/include/c++/4.2.1/bits/vector.tcc ndn-cpp/c/common.h \
+  ndn-cpp/c/../../config.h /usr/include/memory.h \
   /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
@@ -347,25 +348,29 @@ ndn-cpp/face.lo ndn-cpp/face.o: ndn-cpp/face.cpp ndn-cpp/face.hpp \
   ndn-cpp/encoding/../util/blob.hpp \
   ndn-cpp/encoding/../util/../common.hpp ndn-cpp/util/blob.hpp \
   ndn-cpp/publisher-public-key-digest.hpp \
-  ndn-cpp/c/publisher-public-key-digest.h ndn-cpp/c/interest.h \
-  ndn-cpp/c/name.h ndn-cpp/c/publisher-public-key-digest.h \
-  ndn-cpp/data.hpp ndn-cpp/util/signed-blob.hpp ndn-cpp/util/blob.hpp \
-  ndn-cpp/c/data.h ndn-cpp/c/key.h ndn-cpp/transport/tcp-transport.hpp \
+  ndn-cpp/c/publisher-public-key-digest.h ndn-cpp/c/common.h \
+  ndn-cpp/c/interest.h ndn-cpp/c/name.h \
+  ndn-cpp/c/publisher-public-key-digest.h ndn-cpp/data.hpp \
+  ndn-cpp/util/signed-blob.hpp ndn-cpp/util/blob.hpp ndn-cpp/c/data.h \
+  ndn-cpp/c/key.h ndn-cpp/transport/tcp-transport.hpp \
   ndn-cpp/transport/../c/transport/tcp-transport.h \
   ndn-cpp/transport/../c/transport/socket-transport.h \
   /usr/include/sys/socket.h /usr/include/sys/types.h \
   /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  ndn-cpp/transport/../c/transport/../common.h \
   ndn-cpp/transport/../c/transport/../errors.h \
   ndn-cpp/transport/../c/encoding/binary-xml-element-reader.h \
   ndn-cpp/transport/../c/encoding/../errors.h \
   ndn-cpp/transport/../c/encoding/binary-xml-structure-decoder.h \
-  ndn-cpp/transport/../c/encoding/../util/dynamic-uchar-array.h \
+  ndn-cpp/transport/../c/encoding/../common.h \
+  ndn-cpp/transport/../c/encoding/../util/dynamic-uint8-array.h \
   ndn-cpp/transport/../c/encoding/../util/../errors.h \
   ndn-cpp/transport/../c/encoding/../util/ndn_memory.h \
-  ndn-cpp/transport/../c/encoding/../util/../../../config.h \
-  /usr/include/memory.h ndn-cpp/transport/transport.hpp \
+  ndn-cpp/transport/../c/encoding/../util/../common.h \
+  ndn-cpp/transport/transport.hpp \
   ndn-cpp/encoding/binary-xml-element-reader.hpp \
-  ndn-cpp/encoding/../c/encoding/binary-xml-element-reader.h
+  ndn-cpp/encoding/../c/encoding/binary-xml-element-reader.h \
+  ndn-cpp/forwarding-flags.hpp ndn-cpp/c/forwarding-flags.h
 
 ndn-cpp/face.hpp:
 
@@ -575,7 +580,11 @@ ndn-cpp/common.hpp:
 
 /usr/include/c++/4.2.1/bits/vector.tcc:
 
-ndn-cpp/../config.h:
+ndn-cpp/c/common.h:
+
+ndn-cpp/c/../../config.h:
+
+/usr/include/memory.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 
@@ -1173,6 +1182,8 @@ ndn-cpp/publisher-public-key-digest.hpp:
 
 ndn-cpp/c/publisher-public-key-digest.h:
 
+ndn-cpp/c/common.h:
+
 ndn-cpp/c/interest.h:
 
 ndn-cpp/c/name.h:
@@ -1203,6 +1214,8 @@ ndn-cpp/transport/../c/transport/socket-transport.h:
 
 /usr/include/i386/_param.h:
 
+ndn-cpp/transport/../c/transport/../common.h:
+
 ndn-cpp/transport/../c/transport/../errors.h:
 
 ndn-cpp/transport/../c/encoding/binary-xml-element-reader.h:
@@ -1211,18 +1224,22 @@ ndn-cpp/transport/../c/encoding/../errors.h:
 
 ndn-cpp/transport/../c/encoding/binary-xml-structure-decoder.h:
 
-ndn-cpp/transport/../c/encoding/../util/dynamic-uchar-array.h:
+ndn-cpp/transport/../c/encoding/../common.h:
+
+ndn-cpp/transport/../c/encoding/../util/dynamic-uint8-array.h:
 
 ndn-cpp/transport/../c/encoding/../util/../errors.h:
 
 ndn-cpp/transport/../c/encoding/../util/ndn_memory.h:
 
-ndn-cpp/transport/../c/encoding/../util/../../../config.h:
-
-/usr/include/memory.h:
+ndn-cpp/transport/../c/encoding/../util/../common.h:
 
 ndn-cpp/transport/transport.hpp:
 
 ndn-cpp/encoding/binary-xml-element-reader.hpp:
 
 ndn-cpp/encoding/../c/encoding/binary-xml-element-reader.h:
+
+ndn-cpp/forwarding-flags.hpp:
+
+ndn-cpp/c/forwarding-flags.h:

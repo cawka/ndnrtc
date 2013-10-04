@@ -91,9 +91,11 @@ ndn-cpp/node.lo ndn-cpp/node.o: ndn-cpp/node.cpp /usr/include/sys/time.h \
   /usr/include/openssl/ssl2.h /usr/include/openssl/ssl3.h \
   /usr/include/openssl/pq_compat.h /usr/include/openssl/tls1.h \
   /usr/include/openssl/dtls1.h /usr/include/openssl/pqueue.h \
-  /usr/include/openssl/ssl23.h ndn-cpp/encoding/binary-xml-decoder.hpp \
-  ndn-cpp/encoding/../c/errors.h \
+  /usr/include/openssl/ssl23.h ndn-cpp/c/util/../common.h \
+  ndn-cpp/c/util/../../../config.h /usr/include/memory.h \
+  ndn-cpp/encoding/binary-xml-decoder.hpp ndn-cpp/encoding/../c/errors.h \
   ndn-cpp/encoding/../c/encoding/binary-xml-decoder.h \
+  ndn-cpp/encoding/../c/encoding/../common.h \
   ndn-cpp/encoding/../c/encoding/../errors.h \
   ndn-cpp/c/encoding/binary-xml.h ndn-cpp/forwarding-entry.hpp \
   ndn-cpp/name.hpp /usr/include/c++/4.2.1/vector \
@@ -123,7 +125,7 @@ ndn-cpp/node.lo ndn-cpp/node.o: ndn-cpp/node.cpp /usr/include/sys/time.h \
   /usr/include/c++/4.2.1/bits/sstream.tcc ndn-cpp/c/name.h \
   ndn-cpp/encoding/binary-xml-wire-format.hpp \
   ndn-cpp/encoding/wire-format.hpp ndn-cpp/encoding/../common.hpp \
-  ndn-cpp/encoding/../../config.h /usr/local/include/boost/shared_ptr.hpp \
+  ndn-cpp/encoding/../c/common.h /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
   /usr/local/include/boost/config/user.hpp \
@@ -370,8 +372,10 @@ ndn-cpp/node.lo ndn-cpp/node.o: ndn-cpp/node.cpp /usr/include/sys/time.h \
   ndn-cpp/encoding/../util/blob.hpp \
   ndn-cpp/encoding/../util/../common.hpp ndn-cpp/util/blob.hpp \
   ndn-cpp/publisher-public-key-digest.hpp ndn-cpp/common.hpp \
-  ndn-cpp/c/publisher-public-key-digest.h ndn-cpp/c/forwarding-entry.h \
-  ndn-cpp/c/name.h ndn-cpp/c/publisher-public-key-digest.h \
+  ndn-cpp/c/publisher-public-key-digest.h ndn-cpp/c/common.h \
+  ndn-cpp/forwarding-flags.hpp ndn-cpp/c/forwarding-flags.h \
+  ndn-cpp/c/forwarding-entry.h ndn-cpp/c/name.h \
+  ndn-cpp/c/publisher-public-key-digest.h ndn-cpp/c/forwarding-flags.h \
   ndn-cpp/security/key-chain.hpp ndn-cpp/security/../data.hpp \
   ndn-cpp/security/../common.hpp ndn-cpp/security/../name.hpp \
   ndn-cpp/security/../util/signed-blob.hpp \
@@ -387,22 +391,35 @@ ndn-cpp/node.lo ndn-cpp/node.o: ndn-cpp/node.cpp /usr/include/sys/time.h \
   ndn-cpp/security/../transport/../c/transport/socket-transport.h \
   /usr/include/sys/socket.h /usr/include/machine/_param.h \
   /usr/include/i386/_param.h \
+  ndn-cpp/security/../transport/../c/transport/../common.h \
   ndn-cpp/security/../transport/../c/transport/../errors.h \
   ndn-cpp/security/../transport/../c/encoding/binary-xml-element-reader.h \
   ndn-cpp/security/../transport/../c/encoding/../errors.h \
   ndn-cpp/security/../transport/../c/encoding/binary-xml-structure-decoder.h \
-  ndn-cpp/security/../transport/../c/encoding/../util/dynamic-uchar-array.h \
+  ndn-cpp/security/../transport/../c/encoding/../common.h \
+  ndn-cpp/security/../transport/../c/encoding/../util/dynamic-uint8-array.h \
   ndn-cpp/security/../transport/../c/encoding/../util/../errors.h \
   ndn-cpp/security/../transport/../c/encoding/../util/ndn_memory.h \
-  ndn-cpp/security/../transport/../c/encoding/../util/../../../config.h \
-  /usr/include/memory.h ndn-cpp/security/../transport/transport.hpp \
+  ndn-cpp/security/../transport/../c/encoding/../util/../common.h \
+  ndn-cpp/security/../transport/transport.hpp \
   ndn-cpp/security/../encoding/binary-xml-element-reader.hpp \
   ndn-cpp/security/../encoding/../c/encoding/binary-xml-element-reader.h \
+  ndn-cpp/security/../forwarding-flags.hpp \
   ndn-cpp/security/identity/identity-manager.hpp \
-  ndn-cpp/security/identity/../../data.hpp \
+  ndn-cpp/security/identity/../certificate/certificate.hpp \
+  ndn-cpp/security/identity/../certificate/../../data.hpp \
+  ndn-cpp/security/identity/identity-storage.hpp \
+  ndn-cpp/security/identity/../../name.hpp \
+  ndn-cpp/security/identity/../security-common.hpp \
+  ndn-cpp/security/identity/../certificate/public-key.hpp \
+  ndn-cpp/security/identity/../certificate/../../util/blob.hpp \
+  ndn-cpp/security/identity/../certificate/oid.hpp \
+  ndn-cpp/security/identity/../certificate/../security-common.hpp \
   ndn-cpp/security/identity/private-key-storage.hpp \
   ndn-cpp/security/identity/../../util/blob.hpp \
-  ndn-cpp/security/identity/../security-common.hpp \
+  ndn-cpp/security/encryption/encryption-manager.hpp \
+  ndn-cpp/security/encryption/../../name.hpp \
+  ndn-cpp/security/encryption/../security-common.hpp \
   ndn-cpp/sha256-with-rsa-signature.hpp ndn-cpp/data.hpp ndn-cpp/key.hpp \
   ndn-cpp/c/key.h ndn-cpp/node.hpp
 
@@ -718,11 +735,19 @@ ndn-cpp/c/util/crypto.h:
 
 /usr/include/openssl/ssl23.h:
 
+ndn-cpp/c/util/../common.h:
+
+ndn-cpp/c/util/../../../config.h:
+
+/usr/include/memory.h:
+
 ndn-cpp/encoding/binary-xml-decoder.hpp:
 
 ndn-cpp/encoding/../c/errors.h:
 
 ndn-cpp/encoding/../c/encoding/binary-xml-decoder.h:
+
+ndn-cpp/encoding/../c/encoding/../common.h:
 
 ndn-cpp/encoding/../c/encoding/../errors.h:
 
@@ -800,7 +825,7 @@ ndn-cpp/encoding/wire-format.hpp:
 
 ndn-cpp/encoding/../common.hpp:
 
-ndn-cpp/encoding/../../config.h:
+ndn-cpp/encoding/../c/common.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 
@@ -1304,11 +1329,19 @@ ndn-cpp/common.hpp:
 
 ndn-cpp/c/publisher-public-key-digest.h:
 
+ndn-cpp/c/common.h:
+
+ndn-cpp/forwarding-flags.hpp:
+
+ndn-cpp/c/forwarding-flags.h:
+
 ndn-cpp/c/forwarding-entry.h:
 
 ndn-cpp/c/name.h:
 
 ndn-cpp/c/publisher-public-key-digest.h:
+
+ndn-cpp/c/forwarding-flags.h:
 
 ndn-cpp/security/key-chain.hpp:
 
@@ -1354,6 +1387,8 @@ ndn-cpp/security/../transport/../c/transport/socket-transport.h:
 
 /usr/include/i386/_param.h:
 
+ndn-cpp/security/../transport/../c/transport/../common.h:
+
 ndn-cpp/security/../transport/../c/transport/../errors.h:
 
 ndn-cpp/security/../transport/../c/encoding/binary-xml-element-reader.h:
@@ -1362,15 +1397,15 @@ ndn-cpp/security/../transport/../c/encoding/../errors.h:
 
 ndn-cpp/security/../transport/../c/encoding/binary-xml-structure-decoder.h:
 
-ndn-cpp/security/../transport/../c/encoding/../util/dynamic-uchar-array.h:
+ndn-cpp/security/../transport/../c/encoding/../common.h:
+
+ndn-cpp/security/../transport/../c/encoding/../util/dynamic-uint8-array.h:
 
 ndn-cpp/security/../transport/../c/encoding/../util/../errors.h:
 
 ndn-cpp/security/../transport/../c/encoding/../util/ndn_memory.h:
 
-ndn-cpp/security/../transport/../c/encoding/../util/../../../config.h:
-
-/usr/include/memory.h:
+ndn-cpp/security/../transport/../c/encoding/../util/../common.h:
 
 ndn-cpp/security/../transport/transport.hpp:
 
@@ -1378,15 +1413,37 @@ ndn-cpp/security/../encoding/binary-xml-element-reader.hpp:
 
 ndn-cpp/security/../encoding/../c/encoding/binary-xml-element-reader.h:
 
+ndn-cpp/security/../forwarding-flags.hpp:
+
 ndn-cpp/security/identity/identity-manager.hpp:
 
-ndn-cpp/security/identity/../../data.hpp:
+ndn-cpp/security/identity/../certificate/certificate.hpp:
+
+ndn-cpp/security/identity/../certificate/../../data.hpp:
+
+ndn-cpp/security/identity/identity-storage.hpp:
+
+ndn-cpp/security/identity/../../name.hpp:
+
+ndn-cpp/security/identity/../security-common.hpp:
+
+ndn-cpp/security/identity/../certificate/public-key.hpp:
+
+ndn-cpp/security/identity/../certificate/../../util/blob.hpp:
+
+ndn-cpp/security/identity/../certificate/oid.hpp:
+
+ndn-cpp/security/identity/../certificate/../security-common.hpp:
 
 ndn-cpp/security/identity/private-key-storage.hpp:
 
 ndn-cpp/security/identity/../../util/blob.hpp:
 
-ndn-cpp/security/identity/../security-common.hpp:
+ndn-cpp/security/encryption/encryption-manager.hpp:
+
+ndn-cpp/security/encryption/../../name.hpp:
+
+ndn-cpp/security/encryption/../security-common.hpp:
 
 ndn-cpp/sha256-with-rsa-signature.hpp:
 

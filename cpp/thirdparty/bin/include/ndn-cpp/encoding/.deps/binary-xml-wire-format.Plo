@@ -78,18 +78,22 @@ ndn-cpp/encoding/binary-xml-wire-format.lo \
   ndn-cpp/encoding/../c/encoding/../interest.h \
   ndn-cpp/encoding/../c/encoding/../name.h \
   ndn-cpp/encoding/../c/encoding/../publisher-public-key-digest.h \
+  ndn-cpp/encoding/../c/encoding/../common.h \
+  ndn-cpp/encoding/../c/encoding/../../../config.h /usr/include/memory.h \
   ndn-cpp/encoding/../c/encoding/binary-xml-encoder.h \
-  ndn-cpp/encoding/../c/encoding/../util/dynamic-uchar-array.h \
+  ndn-cpp/encoding/../c/encoding/../util/dynamic-uint8-array.h \
   ndn-cpp/encoding/../c/encoding/../util/../errors.h \
   ndn-cpp/encoding/../c/encoding/../util/ndn_memory.h \
-  ndn-cpp/encoding/../c/encoding/../util/../../../config.h \
-  /usr/include/memory.h ndn-cpp/encoding/../c/encoding/binary-xml.h \
+  ndn-cpp/encoding/../c/encoding/../util/../common.h \
+  ndn-cpp/encoding/../c/encoding/binary-xml.h \
   ndn-cpp/encoding/../c/encoding/binary-xml-decoder.h \
+  ndn-cpp/encoding/../c/encoding/../common.h \
   ndn-cpp/encoding/../c/encoding/binary-xml-data.h \
   ndn-cpp/encoding/../c/encoding/../data.h \
   ndn-cpp/encoding/../c/encoding/../key.h \
   ndn-cpp/encoding/../c/encoding/binary-xml-forwarding-entry.h \
   ndn-cpp/encoding/../c/encoding/../forwarding-entry.h \
+  ndn-cpp/encoding/../c/encoding/../forwarding-flags.h \
   ndn-cpp/encoding/../interest.hpp ndn-cpp/encoding/../name.hpp \
   /usr/include/c++/4.2.1/vector /usr/include/c++/4.2.1/bits/stl_vector.h \
   /usr/include/c++/4.2.1/bits/stl_bvector.h \
@@ -118,7 +122,7 @@ ndn-cpp/encoding/binary-xml-wire-format.lo \
   ndn-cpp/encoding/../encoding/binary-xml-wire-format.hpp \
   ndn-cpp/encoding/../encoding/wire-format.hpp \
   ndn-cpp/encoding/../encoding/../common.hpp \
-  ndn-cpp/encoding/../encoding/../../config.h \
+  ndn-cpp/encoding/../encoding/../c/common.h \
   /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
@@ -373,11 +377,13 @@ ndn-cpp/encoding/binary-xml-wire-format.lo \
   ndn-cpp/encoding/../util/signed-blob.hpp \
   ndn-cpp/encoding/../util/blob.hpp ndn-cpp/encoding/../c/data.h \
   ndn-cpp/encoding/../forwarding-entry.hpp \
+  ndn-cpp/encoding/../forwarding-flags.hpp \
+  ndn-cpp/encoding/../c/forwarding-flags.h \
   ndn-cpp/encoding/../c/forwarding-entry.h \
   ndn-cpp/encoding/binary-xml-encoder.hpp ndn-cpp/encoding/../common.hpp \
-  ndn-cpp/encoding/../util/dynamic-uchar-vector.hpp \
+  ndn-cpp/encoding/../util/dynamic-uint8-vector.hpp \
   ndn-cpp/encoding/../util/../common.hpp \
-  ndn-cpp/encoding/../util/../c/util/dynamic-uchar-array.h \
+  ndn-cpp/encoding/../util/../c/util/dynamic-uint8-array.h \
   ndn-cpp/encoding/../c/encoding/binary-xml-encoder.h \
   ndn-cpp/encoding/binary-xml-decoder.hpp ndn-cpp/encoding/../c/errors.h \
   ndn-cpp/encoding/../c/encoding/binary-xml-decoder.h \
@@ -619,21 +625,27 @@ ndn-cpp/encoding/../c/encoding/../name.h:
 
 ndn-cpp/encoding/../c/encoding/../publisher-public-key-digest.h:
 
+ndn-cpp/encoding/../c/encoding/../common.h:
+
+ndn-cpp/encoding/../c/encoding/../../../config.h:
+
+/usr/include/memory.h:
+
 ndn-cpp/encoding/../c/encoding/binary-xml-encoder.h:
 
-ndn-cpp/encoding/../c/encoding/../util/dynamic-uchar-array.h:
+ndn-cpp/encoding/../c/encoding/../util/dynamic-uint8-array.h:
 
 ndn-cpp/encoding/../c/encoding/../util/../errors.h:
 
 ndn-cpp/encoding/../c/encoding/../util/ndn_memory.h:
 
-ndn-cpp/encoding/../c/encoding/../util/../../../config.h:
-
-/usr/include/memory.h:
+ndn-cpp/encoding/../c/encoding/../util/../common.h:
 
 ndn-cpp/encoding/../c/encoding/binary-xml.h:
 
 ndn-cpp/encoding/../c/encoding/binary-xml-decoder.h:
+
+ndn-cpp/encoding/../c/encoding/../common.h:
 
 ndn-cpp/encoding/../c/encoding/binary-xml-data.h:
 
@@ -644,6 +656,8 @@ ndn-cpp/encoding/../c/encoding/../key.h:
 ndn-cpp/encoding/../c/encoding/binary-xml-forwarding-entry.h:
 
 ndn-cpp/encoding/../c/encoding/../forwarding-entry.h:
+
+ndn-cpp/encoding/../c/encoding/../forwarding-flags.h:
 
 ndn-cpp/encoding/../interest.hpp:
 
@@ -717,7 +731,7 @@ ndn-cpp/encoding/../encoding/wire-format.hpp:
 
 ndn-cpp/encoding/../encoding/../common.hpp:
 
-ndn-cpp/encoding/../encoding/../../config.h:
+ndn-cpp/encoding/../encoding/../c/common.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 
@@ -1233,17 +1247,21 @@ ndn-cpp/encoding/../c/data.h:
 
 ndn-cpp/encoding/../forwarding-entry.hpp:
 
+ndn-cpp/encoding/../forwarding-flags.hpp:
+
+ndn-cpp/encoding/../c/forwarding-flags.h:
+
 ndn-cpp/encoding/../c/forwarding-entry.h:
 
 ndn-cpp/encoding/binary-xml-encoder.hpp:
 
 ndn-cpp/encoding/../common.hpp:
 
-ndn-cpp/encoding/../util/dynamic-uchar-vector.hpp:
+ndn-cpp/encoding/../util/dynamic-uint8-vector.hpp:
 
 ndn-cpp/encoding/../util/../common.hpp:
 
-ndn-cpp/encoding/../util/../c/util/dynamic-uchar-array.h:
+ndn-cpp/encoding/../util/../c/util/dynamic-uint8-array.h:
 
 ndn-cpp/encoding/../c/encoding/binary-xml-encoder.h:
 

@@ -64,7 +64,8 @@ ndn-cpp/sha256-with-rsa-signature.lo ndn-cpp/sha256-with-rsa-signature.o:  \
   /usr/include/c++/4.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/4.2.1/bits/stl_vector.h \
   /usr/include/c++/4.2.1/bits/stl_bvector.h \
-  /usr/include/c++/4.2.1/bits/vector.tcc ndn-cpp/../config.h \
+  /usr/include/c++/4.2.1/bits/vector.tcc ndn-cpp/c/common.h \
+  ndn-cpp/c/../../config.h /usr/include/memory.h \
   /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
@@ -349,7 +350,7 @@ ndn-cpp/sha256-with-rsa-signature.lo ndn-cpp/sha256-with-rsa-signature.o:  \
   ndn-cpp/encoding/../util/../common.hpp ndn-cpp/util/blob.hpp \
   ndn-cpp/util/signed-blob.hpp ndn-cpp/util/blob.hpp ndn-cpp/c/data.h \
   ndn-cpp/c/name.h ndn-cpp/c/publisher-public-key-digest.h \
-  ndn-cpp/c/key.h ndn-cpp/key.hpp ndn-cpp/c/key.h \
+  ndn-cpp/c/common.h ndn-cpp/c/key.h ndn-cpp/key.hpp ndn-cpp/c/key.h \
   ndn-cpp/publisher-public-key-digest.hpp \
   ndn-cpp/c/publisher-public-key-digest.h
 
@@ -561,7 +562,11 @@ ndn-cpp/common.hpp:
 
 /usr/include/c++/4.2.1/bits/vector.tcc:
 
-ndn-cpp/../config.h:
+ndn-cpp/c/common.h:
+
+ndn-cpp/c/../../config.h:
+
+/usr/include/memory.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 
@@ -1162,6 +1167,8 @@ ndn-cpp/c/data.h:
 ndn-cpp/c/name.h:
 
 ndn-cpp/c/publisher-public-key-digest.h:
+
+ndn-cpp/c/common.h:
 
 ndn-cpp/c/key.h:
 

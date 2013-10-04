@@ -97,7 +97,8 @@ ndn-cpp/name.lo ndn-cpp/name.o: ndn-cpp/name.cpp \
   /usr/include/c++/4.2.1/bits/sstream.tcc ndn-cpp/c/name.h \
   ndn-cpp/encoding/binary-xml-wire-format.hpp \
   ndn-cpp/encoding/wire-format.hpp ndn-cpp/encoding/../common.hpp \
-  ndn-cpp/encoding/../../config.h /usr/local/include/boost/shared_ptr.hpp \
+  ndn-cpp/encoding/../c/common.h ndn-cpp/encoding/../c/../../config.h \
+  /usr/include/memory.h /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
   /usr/local/include/boost/config/user.hpp \
@@ -640,7 +641,11 @@ ndn-cpp/encoding/wire-format.hpp:
 
 ndn-cpp/encoding/../common.hpp:
 
-ndn-cpp/encoding/../../config.h:
+ndn-cpp/encoding/../c/common.h:
+
+ndn-cpp/encoding/../c/../../config.h:
+
+/usr/include/memory.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 

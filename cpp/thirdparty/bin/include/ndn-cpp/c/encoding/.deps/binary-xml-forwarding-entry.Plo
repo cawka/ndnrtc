@@ -4,20 +4,23 @@ ndn-cpp/c/encoding/binary-xml-forwarding-entry.lo \
   ndn-cpp/c/encoding/binary-xml.h \
   ndn-cpp/c/encoding/binary-xml-forwarding-entry.h \
   ndn-cpp/c/encoding/../errors.h ndn-cpp/c/encoding/../forwarding-entry.h \
-  ndn-cpp/c/encoding/../name.h \
-  ndn-cpp/c/encoding/../publisher-public-key-digest.h \
-  ndn-cpp/c/encoding/binary-xml-encoder.h \
-  ndn-cpp/c/encoding/../util/dynamic-uchar-array.h \
-  ndn-cpp/c/encoding/../util/../errors.h \
-  ndn-cpp/c/encoding/../util/ndn_memory.h \
-  ndn-cpp/c/encoding/../util/../../../config.h /usr/include/memory.h \
-  /usr/include/string.h /usr/include/_types.h /usr/include/sys/_types.h \
+  ndn-cpp/c/encoding/../common.h ndn-cpp/c/encoding/../../../config.h \
+  /usr/include/stdint.h /usr/include/memory.h /usr/include/string.h \
+  /usr/include/_types.h /usr/include/sys/_types.h \
   /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
   /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
   /usr/include/i386/_types.h /usr/include/Availability.h \
   /usr/include/AvailabilityInternal.h /usr/include/strings.h \
   /usr/include/secure/_string.h /usr/include/secure/_common.h \
-  ndn-cpp/c/encoding/binary-xml-decoder.h
+  ndn-cpp/c/encoding/../name.h \
+  ndn-cpp/c/encoding/../publisher-public-key-digest.h \
+  ndn-cpp/c/encoding/../forwarding-flags.h \
+  ndn-cpp/c/encoding/binary-xml-encoder.h \
+  ndn-cpp/c/encoding/../util/dynamic-uint8-array.h \
+  ndn-cpp/c/encoding/../util/../errors.h \
+  ndn-cpp/c/encoding/../util/ndn_memory.h \
+  ndn-cpp/c/encoding/../util/../common.h \
+  ndn-cpp/c/encoding/binary-xml-decoder.h ndn-cpp/c/encoding/../common.h
 
 ndn-cpp/c/encoding/binary-xml.h:
 
@@ -27,19 +30,11 @@ ndn-cpp/c/encoding/../errors.h:
 
 ndn-cpp/c/encoding/../forwarding-entry.h:
 
-ndn-cpp/c/encoding/../name.h:
+ndn-cpp/c/encoding/../common.h:
 
-ndn-cpp/c/encoding/../publisher-public-key-digest.h:
+ndn-cpp/c/encoding/../../../config.h:
 
-ndn-cpp/c/encoding/binary-xml-encoder.h:
-
-ndn-cpp/c/encoding/../util/dynamic-uchar-array.h:
-
-ndn-cpp/c/encoding/../util/../errors.h:
-
-ndn-cpp/c/encoding/../util/ndn_memory.h:
-
-ndn-cpp/c/encoding/../util/../../../config.h:
+/usr/include/stdint.h:
 
 /usr/include/memory.h:
 
@@ -69,4 +64,22 @@ ndn-cpp/c/encoding/../util/../../../config.h:
 
 /usr/include/secure/_common.h:
 
+ndn-cpp/c/encoding/../name.h:
+
+ndn-cpp/c/encoding/../publisher-public-key-digest.h:
+
+ndn-cpp/c/encoding/../forwarding-flags.h:
+
+ndn-cpp/c/encoding/binary-xml-encoder.h:
+
+ndn-cpp/c/encoding/../util/dynamic-uint8-array.h:
+
+ndn-cpp/c/encoding/../util/../errors.h:
+
+ndn-cpp/c/encoding/../util/ndn_memory.h:
+
+ndn-cpp/c/encoding/../util/../common.h:
+
 ndn-cpp/c/encoding/binary-xml-decoder.h:
+
+ndn-cpp/c/encoding/../common.h:

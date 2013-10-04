@@ -1,5 +1,6 @@
 ndn-cpp/c/name.lo ndn-cpp/c/name.o: ndn-cpp/c/name.c \
-  ndn-cpp/c/util/ndn_memory.h ndn-cpp/c/util/../../../config.h \
+  ndn-cpp/c/util/ndn_memory.h ndn-cpp/c/util/../common.h \
+  ndn-cpp/c/util/../../../config.h /usr/include/stdint.h \
   /usr/include/memory.h /usr/include/string.h /usr/include/_types.h \
   /usr/include/sys/_types.h /usr/include/sys/cdefs.h \
   /usr/include/sys/_symbol_aliasing.h \
@@ -11,7 +12,11 @@ ndn-cpp/c/name.lo ndn-cpp/c/name.o: ndn-cpp/c/name.c \
 
 ndn-cpp/c/util/ndn_memory.h:
 
+ndn-cpp/c/util/../common.h:
+
 ndn-cpp/c/util/../../../config.h:
+
+/usr/include/stdint.h:
 
 /usr/include/memory.h:
 

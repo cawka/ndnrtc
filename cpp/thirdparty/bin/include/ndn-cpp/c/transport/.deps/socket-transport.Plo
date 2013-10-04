@@ -12,22 +12,23 @@ ndn-cpp/c/transport/socket-transport.lo \
   /usr/include/libkern/i386/_OSByteOrder.h /usr/include/sys/_structs.h \
   /usr/include/machine/_param.h /usr/include/i386/_param.h \
   /usr/include/Availability.h /usr/include/AvailabilityInternal.h \
+  ndn-cpp/c/transport/../common.h ndn-cpp/c/transport/../../../config.h \
+  /usr/include/stdint.h /usr/include/memory.h /usr/include/string.h \
+  /usr/include/_types.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
   ndn-cpp/c/transport/../errors.h /usr/include/stdio.h \
-  /usr/include/_types.h /usr/include/secure/_stdio.h \
-  /usr/include/secure/_common.h /usr/include/stdlib.h \
+  /usr/include/secure/_stdio.h /usr/include/stdlib.h \
   /usr/include/sys/wait.h /usr/include/sys/signal.h \
   /usr/include/machine/signal.h /usr/include/i386/signal.h \
   /usr/include/i386/_structs.h /usr/include/machine/_structs.h \
   /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
   /usr/include/alloca.h /usr/include/unistd.h /usr/include/sys/unistd.h \
   /usr/include/sys/select.h /usr/include/sys/_select.h \
-  /usr/include/netdb.h /usr/include/stdint.h /usr/include/netinet/in.h \
+  /usr/include/netdb.h /usr/include/netinet/in.h \
   /usr/include/netinet6/in6.h /usr/include/arpa/inet.h \
   /usr/include/poll.h /usr/include/sys/poll.h \
   ndn-cpp/c/transport/../util/ndn_memory.h \
-  ndn-cpp/c/transport/../util/../../../config.h /usr/include/memory.h \
-  /usr/include/string.h /usr/include/strings.h \
-  /usr/include/secure/_string.h
+  ndn-cpp/c/transport/../util/../common.h
 
 ndn-cpp/c/transport/socket-transport.h:
 
@@ -73,15 +74,29 @@ ndn-cpp/c/transport/socket-transport.h:
 
 /usr/include/AvailabilityInternal.h:
 
+ndn-cpp/c/transport/../common.h:
+
+ndn-cpp/c/transport/../../../config.h:
+
+/usr/include/stdint.h:
+
+/usr/include/memory.h:
+
+/usr/include/string.h:
+
+/usr/include/_types.h:
+
+/usr/include/strings.h:
+
+/usr/include/secure/_string.h:
+
+/usr/include/secure/_common.h:
+
 ndn-cpp/c/transport/../errors.h:
 
 /usr/include/stdio.h:
 
-/usr/include/_types.h:
-
 /usr/include/secure/_stdio.h:
-
-/usr/include/secure/_common.h:
 
 /usr/include/stdlib.h:
 
@@ -113,8 +128,6 @@ ndn-cpp/c/transport/../errors.h:
 
 /usr/include/netdb.h:
 
-/usr/include/stdint.h:
-
 /usr/include/netinet/in.h:
 
 /usr/include/netinet6/in6.h:
@@ -127,12 +140,4 @@ ndn-cpp/c/transport/../errors.h:
 
 ndn-cpp/c/transport/../util/ndn_memory.h:
 
-ndn-cpp/c/transport/../util/../../../config.h:
-
-/usr/include/memory.h:
-
-/usr/include/string.h:
-
-/usr/include/strings.h:
-
-/usr/include/secure/_string.h:
+ndn-cpp/c/transport/../util/../common.h:

@@ -75,7 +75,8 @@ ndn-cpp/transport/tcp-transport.lo ndn-cpp/transport/tcp-transport.o:  \
   ndn-cpp/transport/../node.hpp ndn-cpp/transport/../common.hpp \
   /usr/include/c++/4.2.1/vector /usr/include/c++/4.2.1/bits/stl_vector.h \
   /usr/include/c++/4.2.1/bits/stl_bvector.h \
-  /usr/include/c++/4.2.1/bits/vector.tcc ndn-cpp/transport/../../config.h \
+  /usr/include/c++/4.2.1/bits/vector.tcc ndn-cpp/transport/../c/common.h \
+  ndn-cpp/transport/../c/../../config.h /usr/include/memory.h \
   /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
@@ -350,7 +351,8 @@ ndn-cpp/transport/tcp-transport.lo ndn-cpp/transport/tcp-transport.o:  \
   ndn-cpp/transport/../util/blob.hpp \
   ndn-cpp/transport/../publisher-public-key-digest.hpp \
   ndn-cpp/transport/../c/publisher-public-key-digest.h \
-  ndn-cpp/transport/../c/interest.h ndn-cpp/transport/../c/name.h \
+  ndn-cpp/transport/../c/common.h ndn-cpp/transport/../c/interest.h \
+  ndn-cpp/transport/../c/name.h \
   ndn-cpp/transport/../c/publisher-public-key-digest.h \
   ndn-cpp/transport/../data.hpp ndn-cpp/transport/../util/signed-blob.hpp \
   ndn-cpp/transport/../util/blob.hpp ndn-cpp/transport/../c/data.h \
@@ -360,19 +362,23 @@ ndn-cpp/transport/tcp-transport.lo ndn-cpp/transport/tcp-transport.o:  \
   ndn-cpp/transport/../transport/../c/transport/socket-transport.h \
   /usr/include/sys/socket.h /usr/include/sys/types.h \
   /usr/include/machine/_param.h /usr/include/i386/_param.h \
+  ndn-cpp/transport/../transport/../c/transport/../common.h \
   ndn-cpp/transport/../transport/../c/transport/../errors.h \
   ndn-cpp/transport/../transport/../c/encoding/binary-xml-element-reader.h \
   ndn-cpp/transport/../transport/../c/encoding/../errors.h \
   ndn-cpp/transport/../transport/../c/encoding/binary-xml-structure-decoder.h \
-  ndn-cpp/transport/../transport/../c/encoding/../util/dynamic-uchar-array.h \
+  ndn-cpp/transport/../transport/../c/encoding/../common.h \
+  ndn-cpp/transport/../transport/../c/encoding/../util/dynamic-uint8-array.h \
   ndn-cpp/transport/../transport/../c/encoding/../util/../errors.h \
   ndn-cpp/transport/../transport/../c/encoding/../util/ndn_memory.h \
-  ndn-cpp/transport/../transport/../c/encoding/../util/../../../config.h \
-  /usr/include/memory.h ndn-cpp/transport/../transport/transport.hpp \
+  ndn-cpp/transport/../transport/../c/encoding/../util/../common.h \
+  ndn-cpp/transport/../transport/transport.hpp \
   ndn-cpp/transport/../encoding/binary-xml-element-reader.hpp \
   ndn-cpp/transport/../encoding/../c/encoding/binary-xml-element-reader.h \
+  ndn-cpp/transport/../forwarding-flags.hpp \
+  ndn-cpp/transport/../c/forwarding-flags.h \
   ndn-cpp/transport/../c/util/ndn_realloc.h \
-  ndn-cpp/transport/../c/util/dynamic-uchar-array.h \
+  ndn-cpp/transport/../c/util/dynamic-uint8-array.h \
   ndn-cpp/transport/tcp-transport.hpp
 
 /usr/include/c++/4.2.1/stdexcept:
@@ -613,7 +619,11 @@ ndn-cpp/transport/../common.hpp:
 
 /usr/include/c++/4.2.1/bits/vector.tcc:
 
-ndn-cpp/transport/../../config.h:
+ndn-cpp/transport/../c/common.h:
+
+ndn-cpp/transport/../c/../../config.h:
+
+/usr/include/memory.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 
@@ -1179,6 +1189,8 @@ ndn-cpp/transport/../publisher-public-key-digest.hpp:
 
 ndn-cpp/transport/../c/publisher-public-key-digest.h:
 
+ndn-cpp/transport/../c/common.h:
+
 ndn-cpp/transport/../c/interest.h:
 
 ndn-cpp/transport/../c/name.h:
@@ -1209,6 +1221,8 @@ ndn-cpp/transport/../transport/../c/transport/socket-transport.h:
 
 /usr/include/i386/_param.h:
 
+ndn-cpp/transport/../transport/../c/transport/../common.h:
+
 ndn-cpp/transport/../transport/../c/transport/../errors.h:
 
 ndn-cpp/transport/../transport/../c/encoding/binary-xml-element-reader.h:
@@ -1217,15 +1231,15 @@ ndn-cpp/transport/../transport/../c/encoding/../errors.h:
 
 ndn-cpp/transport/../transport/../c/encoding/binary-xml-structure-decoder.h:
 
-ndn-cpp/transport/../transport/../c/encoding/../util/dynamic-uchar-array.h:
+ndn-cpp/transport/../transport/../c/encoding/../common.h:
+
+ndn-cpp/transport/../transport/../c/encoding/../util/dynamic-uint8-array.h:
 
 ndn-cpp/transport/../transport/../c/encoding/../util/../errors.h:
 
 ndn-cpp/transport/../transport/../c/encoding/../util/ndn_memory.h:
 
-ndn-cpp/transport/../transport/../c/encoding/../util/../../../config.h:
-
-/usr/include/memory.h:
+ndn-cpp/transport/../transport/../c/encoding/../util/../common.h:
 
 ndn-cpp/transport/../transport/transport.hpp:
 
@@ -1233,8 +1247,12 @@ ndn-cpp/transport/../encoding/binary-xml-element-reader.hpp:
 
 ndn-cpp/transport/../encoding/../c/encoding/binary-xml-element-reader.h:
 
+ndn-cpp/transport/../forwarding-flags.hpp:
+
+ndn-cpp/transport/../c/forwarding-flags.h:
+
 ndn-cpp/transport/../c/util/ndn_realloc.h:
 
-ndn-cpp/transport/../c/util/dynamic-uchar-array.h:
+ndn-cpp/transport/../c/util/dynamic-uint8-array.h:
 
 ndn-cpp/transport/tcp-transport.hpp:

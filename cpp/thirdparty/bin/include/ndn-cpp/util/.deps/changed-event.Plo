@@ -63,7 +63,8 @@ ndn-cpp/util/changed-event.lo ndn-cpp/util/changed-event.o:  \
   /usr/include/c++/4.2.1/bits/stl_vector.h \
   /usr/include/c++/4.2.1/bits/stl_bvector.h \
   /usr/include/c++/4.2.1/bits/vector.tcc ndn-cpp/util/../common.hpp \
-  ndn-cpp/util/../../config.h /usr/local/include/boost/shared_ptr.hpp \
+  ndn-cpp/util/../c/common.h ndn-cpp/util/../c/../../config.h \
+  /usr/include/memory.h /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
   /usr/local/include/boost/config/user.hpp \
@@ -547,7 +548,11 @@ ndn-cpp/util/changed-event.hpp:
 
 ndn-cpp/util/../common.hpp:
 
-ndn-cpp/util/../../config.h:
+ndn-cpp/util/../c/common.h:
+
+ndn-cpp/util/../c/../../config.h:
+
+/usr/include/memory.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 

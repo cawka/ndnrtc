@@ -15,8 +15,9 @@ ndn-cpp/c/util/ndn_realloc.lo ndn-cpp/c/util/ndn_realloc.o:  \
   /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
   /usr/include/machine/types.h /usr/include/i386/types.h \
   /usr/include/i386/_types.h ndn-cpp/c/util/ndn_realloc.h \
-  ndn-cpp/c/util/dynamic-uchar-array.h ndn-cpp/c/util/../errors.h \
-  ndn-cpp/c/util/ndn_memory.h ndn-cpp/c/util/../../../config.h \
+  ndn-cpp/c/util/dynamic-uint8-array.h ndn-cpp/c/util/../errors.h \
+  ndn-cpp/c/util/ndn_memory.h ndn-cpp/c/util/../common.h \
+  ndn-cpp/c/util/../../../config.h /usr/include/stdint.h \
   /usr/include/memory.h /usr/include/string.h /usr/include/strings.h \
   /usr/include/secure/_string.h /usr/include/secure/_common.h
 
@@ -80,13 +81,17 @@ ndn-cpp/c/util/ndn_realloc.lo ndn-cpp/c/util/ndn_realloc.o:  \
 
 ndn-cpp/c/util/ndn_realloc.h:
 
-ndn-cpp/c/util/dynamic-uchar-array.h:
+ndn-cpp/c/util/dynamic-uint8-array.h:
 
 ndn-cpp/c/util/../errors.h:
 
 ndn-cpp/c/util/ndn_memory.h:
 
+ndn-cpp/c/util/../common.h:
+
 ndn-cpp/c/util/../../../config.h:
+
+/usr/include/stdint.h:
 
 /usr/include/memory.h:
 

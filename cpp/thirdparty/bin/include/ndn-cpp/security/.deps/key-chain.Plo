@@ -1,87 +1,33 @@
 ndn-cpp/security/key-chain.lo ndn-cpp/security/key-chain.o:  \
- ndn-cpp/security/key-chain.cpp /usr/include/c++/4.2.1/stdexcept \
-  /usr/include/c++/4.2.1/exception \
-  /usr/include/c++/4.2.1/bits/c++config.h \
-  /usr/include/c++/4.2.1/bits/os_defines.h /usr/include/unistd.h \
-  /usr/include/_types.h /usr/include/sys/_types.h \
-  /usr/include/sys/cdefs.h /usr/include/sys/_symbol_aliasing.h \
+ ndn-cpp/security/key-chain.cpp ndn-cpp/security/../c/util/crypto.h \
+  /usr/include/openssl/ssl.h /usr/include/AvailabilityMacros.h \
+  /usr/include/openssl/e_os2.h /usr/include/openssl/opensslconf.h \
+  /usr/include/openssl/comp.h /usr/include/openssl/crypto.h \
+  /usr/include/stdlib.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
   /usr/include/sys/_posix_availability.h /usr/include/machine/_types.h \
-  /usr/include/i386/_types.h /usr/include/sys/unistd.h \
-  /usr/include/Availability.h /usr/include/AvailabilityInternal.h \
-  /usr/include/sys/select.h /usr/include/sys/appleapiopts.h \
-  /usr/include/sys/_structs.h /usr/include/sys/_select.h \
-  /usr/include/c++/4.2.1/bits/cpu_defines.h /usr/include/c++/4.2.1/string \
-  /usr/include/c++/4.2.1/bits/stringfwd.h \
-  /usr/include/c++/4.2.1/bits/char_traits.h \
-  /usr/include/c++/4.2.1/cstring /usr/include/c++/4.2.1/cstddef \
-  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
-  /usr/include/string.h /usr/include/strings.h \
-  /usr/include/c++/4.2.1/bits/stl_algobase.h \
-  /usr/include/c++/4.2.1/climits \
-  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/limits.h \
-  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/syslimits.h \
-  /usr/include/limits.h /usr/include/machine/limits.h \
-  /usr/include/i386/limits.h /usr/include/i386/_limits.h \
-  /usr/include/sys/syslimits.h /usr/include/c++/4.2.1/cstdlib \
-  /usr/include/stdlib.h /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/i386/_types.h /usr/include/sys/wait.h \
+  /usr/include/sys/signal.h /usr/include/sys/appleapiopts.h \
   /usr/include/machine/signal.h /usr/include/i386/signal.h \
-  /usr/include/i386/_structs.h /usr/include/machine/_structs.h \
-  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
-  /usr/include/machine/endian.h /usr/include/i386/endian.h \
-  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/i386/_structs.h /usr/include/sys/_structs.h \
+  /usr/include/machine/_structs.h /usr/include/mach/i386/_structs.h \
+  /usr/include/sys/resource.h /usr/include/machine/endian.h \
+  /usr/include/i386/endian.h /usr/include/sys/_endian.h \
+  /usr/include/libkern/_OSByteOrder.h \
   /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
   /usr/include/machine/types.h /usr/include/i386/types.h \
-  /usr/include/i386/_types.h /usr/include/c++/4.2.1/iosfwd \
-  /usr/include/c++/4.2.1/bits/c++locale.h /usr/include/c++/4.2.1/clocale \
-  /usr/include/locale.h /usr/include/_locale.h \
-  /usr/include/c++/4.2.1/cstdio /usr/include/stdio.h \
-  /usr/include/c++/4.2.1/cstdarg \
+  /usr/include/i386/_types.h /usr/include/stdio.h \
+  /usr/include/openssl/stack.h /usr/include/openssl/safestack.h \
+  /usr/include/openssl/opensslv.h /usr/include/openssl/ossl_typ.h \
+  /usr/include/openssl/symhacks.h /usr/include/openssl/bio.h \
   /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h \
-  /usr/include/c++/4.2.1/bits/c++io.h /usr/include/c++/4.2.1/bits/gthr.h \
-  /usr/include/c++/4.2.1/bits/gthr-default.h /usr/include/pthread.h \
-  /usr/include/pthread_impl.h /usr/include/sched.h /usr/include/time.h \
-  /usr/include/_structs.h /usr/include/c++/4.2.1/cctype \
-  /usr/include/ctype.h /usr/include/runetype.h \
-  /usr/include/c++/4.2.1/bits/postypes.h /usr/include/c++/4.2.1/cwchar \
-  /usr/include/c++/4.2.1/ctime /usr/include/wchar.h \
-  /usr/include/_wctype.h /usr/include/stdint.h \
-  /usr/include/c++/4.2.1/bits/functexcept.h \
-  /usr/include/c++/4.2.1/exception_defines.h \
-  /usr/include/c++/4.2.1/bits/stl_pair.h \
-  /usr/include/c++/4.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/4.2.1/ext/type_traits.h /usr/include/c++/4.2.1/utility \
-  /usr/include/c++/4.2.1/bits/stl_relops.h \
-  /usr/include/c++/4.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/4.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/4.2.1/bits/concept_check.h \
-  /usr/include/c++/4.2.1/bits/stl_iterator.h \
-  /usr/include/c++/4.2.1/debug/debug.h /usr/include/c++/4.2.1/memory \
-  /usr/include/c++/4.2.1/bits/allocator.h \
-  /usr/include/c++/4.2.1/bits/c++allocator.h \
-  /usr/include/c++/4.2.1/ext/new_allocator.h /usr/include/c++/4.2.1/new \
-  /usr/include/c++/4.2.1/bits/stl_construct.h \
-  /usr/include/c++/4.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/4.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/4.2.1/limits \
-  /usr/include/c++/4.2.1/bits/ostream_insert.h \
-  /usr/include/c++/4.2.1/bits/stl_function.h \
-  /usr/include/c++/4.2.1/bits/basic_string.h \
-  /usr/include/c++/4.2.1/ext/atomicity.h \
-  /usr/include/c++/4.2.1/bits/atomic_word.h \
-  /usr/include/c++/4.2.1/algorithm /usr/include/c++/4.2.1/bits/stl_algo.h \
-  /usr/include/c++/4.2.1/bits/stl_heap.h \
-  /usr/include/c++/4.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/4.2.1/bits/basic_string.tcc \
-  ndn-cpp/security/../c/util/crypto.h /usr/include/openssl/ssl.h \
-  /usr/include/AvailabilityMacros.h /usr/include/openssl/e_os2.h \
-  /usr/include/openssl/opensslconf.h /usr/include/openssl/comp.h \
-  /usr/include/openssl/crypto.h /usr/include/openssl/stack.h \
-  /usr/include/openssl/safestack.h /usr/include/openssl/opensslv.h \
-  /usr/include/openssl/ossl_typ.h /usr/include/openssl/symhacks.h \
-  /usr/include/openssl/bio.h /usr/include/openssl/x509.h \
-  /usr/include/openssl/buffer.h /usr/include/sys/types.h \
-  /usr/include/openssl/evp.h /usr/include/openssl/objects.h \
-  /usr/include/openssl/obj_mac.h /usr/include/openssl/asn1.h \
+  /usr/include/openssl/x509.h /usr/include/openssl/buffer.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h \
+  /usr/include/sys/types.h /usr/include/openssl/evp.h \
+  /usr/include/openssl/objects.h /usr/include/openssl/obj_mac.h \
+  /usr/include/openssl/asn1.h /usr/include/time.h /usr/include/_structs.h \
   /usr/include/openssl/bn.h /usr/include/openssl/ec.h \
   /usr/include/openssl/ecdsa.h /usr/include/openssl/ecdh.h \
   /usr/include/openssl/rsa.h /usr/include/openssl/dsa.h \
@@ -92,27 +38,72 @@ ndn-cpp/security/key-chain.lo ndn-cpp/security/key-chain.o:  \
   /usr/include/openssl/kssl.h /usr/include/openssl/ssl2.h \
   /usr/include/openssl/ssl3.h /usr/include/openssl/pq_compat.h \
   /usr/include/openssl/tls1.h /usr/include/openssl/dtls1.h \
-  /usr/include/openssl/pqueue.h /usr/include/sys/time.h \
-  /usr/include/openssl/ssl23.h \
-  ndn-cpp/security/../c/encoding/binary-xml-data.h \
+  /usr/include/openssl/pqueue.h /usr/include/string.h \
+  /usr/include/strings.h /usr/include/sys/time.h \
+  /usr/include/sys/_select.h /usr/include/openssl/ssl23.h \
+  ndn-cpp/security/../c/util/../common.h \
+  ndn-cpp/security/../c/util/../../../config.h /usr/include/stdint.h \
+  /usr/include/memory.h ndn-cpp/security/../c/encoding/binary-xml-data.h \
   ndn-cpp/security/../c/encoding/../errors.h \
   ndn-cpp/security/../c/encoding/../data.h \
   ndn-cpp/security/../c/encoding/../name.h \
   ndn-cpp/security/../c/encoding/../publisher-public-key-digest.h \
+  ndn-cpp/security/../c/encoding/../common.h \
   ndn-cpp/security/../c/encoding/../key.h \
   ndn-cpp/security/../c/encoding/binary-xml-encoder.h \
-  ndn-cpp/security/../c/encoding/../util/dynamic-uchar-array.h \
+  ndn-cpp/security/../c/encoding/../util/dynamic-uint8-array.h \
   ndn-cpp/security/../c/encoding/../util/../errors.h \
   ndn-cpp/security/../c/encoding/../util/ndn_memory.h \
-  ndn-cpp/security/../c/encoding/../util/../../../config.h \
-  /usr/include/memory.h ndn-cpp/security/../c/encoding/binary-xml.h \
+  ndn-cpp/security/../c/encoding/../util/../common.h \
+  ndn-cpp/security/../c/encoding/binary-xml.h \
   ndn-cpp/security/../c/encoding/binary-xml-decoder.h \
+  ndn-cpp/security/../c/encoding/../common.h \
   ndn-cpp/security/../encoding/binary-xml-encoder.hpp \
-  /usr/include/c++/4.2.1/vector /usr/include/c++/4.2.1/bits/stl_vector.h \
+  /usr/include/c++/4.2.1/vector /usr/include/c++/4.2.1/bits/functexcept.h \
+  /usr/include/c++/4.2.1/bits/c++config.h \
+  /usr/include/c++/4.2.1/bits/os_defines.h /usr/include/unistd.h \
+  /usr/include/sys/unistd.h /usr/include/sys/select.h \
+  /usr/include/c++/4.2.1/bits/cpu_defines.h \
+  /usr/include/c++/4.2.1/exception_defines.h \
+  /usr/include/c++/4.2.1/bits/stl_algobase.h \
+  /usr/include/c++/4.2.1/cstring /usr/include/c++/4.2.1/cstddef \
+  /usr/include/c++/4.2.1/climits \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/limits.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/syslimits.h \
+  /usr/include/limits.h /usr/include/machine/limits.h \
+  /usr/include/i386/limits.h /usr/include/i386/_limits.h \
+  /usr/include/sys/syslimits.h /usr/include/c++/4.2.1/cstdlib \
+  /usr/include/c++/4.2.1/iosfwd /usr/include/c++/4.2.1/bits/c++locale.h \
+  /usr/include/c++/4.2.1/clocale /usr/include/locale.h \
+  /usr/include/_locale.h /usr/include/c++/4.2.1/cstdio \
+  /usr/include/c++/4.2.1/cstdarg /usr/include/c++/4.2.1/bits/c++io.h \
+  /usr/include/c++/4.2.1/bits/gthr.h \
+  /usr/include/c++/4.2.1/bits/gthr-default.h /usr/include/pthread.h \
+  /usr/include/pthread_impl.h /usr/include/sched.h \
+  /usr/include/c++/4.2.1/cctype /usr/include/ctype.h \
+  /usr/include/runetype.h /usr/include/c++/4.2.1/bits/stringfwd.h \
+  /usr/include/c++/4.2.1/bits/postypes.h /usr/include/c++/4.2.1/cwchar \
+  /usr/include/c++/4.2.1/ctime /usr/include/wchar.h \
+  /usr/include/_wctype.h /usr/include/c++/4.2.1/bits/stl_pair.h \
+  /usr/include/c++/4.2.1/bits/cpp_type_traits.h \
+  /usr/include/c++/4.2.1/ext/type_traits.h /usr/include/c++/4.2.1/utility \
+  /usr/include/c++/4.2.1/bits/stl_relops.h \
+  /usr/include/c++/4.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/4.2.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/4.2.1/bits/concept_check.h \
+  /usr/include/c++/4.2.1/bits/stl_iterator.h \
+  /usr/include/c++/4.2.1/debug/debug.h \
+  /usr/include/c++/4.2.1/bits/allocator.h \
+  /usr/include/c++/4.2.1/bits/c++allocator.h \
+  /usr/include/c++/4.2.1/ext/new_allocator.h /usr/include/c++/4.2.1/new \
+  /usr/include/c++/4.2.1/exception \
+  /usr/include/c++/4.2.1/bits/stl_construct.h \
+  /usr/include/c++/4.2.1/bits/stl_uninitialized.h \
+  /usr/include/c++/4.2.1/bits/stl_vector.h \
   /usr/include/c++/4.2.1/bits/stl_bvector.h \
   /usr/include/c++/4.2.1/bits/vector.tcc \
   ndn-cpp/security/../encoding/../common.hpp \
-  ndn-cpp/security/../encoding/../../config.h \
+  ndn-cpp/security/../encoding/../c/common.h \
   /usr/local/include/boost/shared_ptr.hpp \
   /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
   /usr/local/include/boost/config.hpp \
@@ -127,11 +118,25 @@ ndn-cpp/security/key-chain.lo ndn-cpp/security/key-chain.o:  \
   /usr/local/include/boost/config/posix_features.hpp \
   /usr/local/include/boost/config/suffix.hpp \
   /usr/local/include/boost/config/no_tr1/memory.hpp \
-  /usr/local/include/boost/assert.hpp /usr/include/assert.h \
-  /usr/include/c++/4.2.1/iostream /usr/include/c++/4.2.1/ostream \
-  /usr/include/c++/4.2.1/ios /usr/include/c++/4.2.1/bits/localefwd.h \
+  /usr/include/c++/4.2.1/memory \
+  /usr/include/c++/4.2.1/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/4.2.1/limits /usr/local/include/boost/assert.hpp \
+  /usr/include/assert.h /usr/include/c++/4.2.1/iostream \
+  /usr/include/c++/4.2.1/ostream /usr/include/c++/4.2.1/ios \
+  /usr/include/c++/4.2.1/bits/char_traits.h \
+  /usr/include/c++/4.2.1/bits/localefwd.h \
   /usr/include/c++/4.2.1/bits/ios_base.h \
+  /usr/include/c++/4.2.1/ext/atomicity.h \
+  /usr/include/c++/4.2.1/bits/atomic_word.h \
   /usr/include/c++/4.2.1/bits/locale_classes.h \
+  /usr/include/c++/4.2.1/string \
+  /usr/include/c++/4.2.1/bits/ostream_insert.h \
+  /usr/include/c++/4.2.1/bits/stl_function.h \
+  /usr/include/c++/4.2.1/bits/basic_string.h \
+  /usr/include/c++/4.2.1/algorithm /usr/include/c++/4.2.1/bits/stl_algo.h \
+  /usr/include/c++/4.2.1/bits/stl_heap.h \
+  /usr/include/c++/4.2.1/bits/stl_tempbuf.h \
+  /usr/include/c++/4.2.1/bits/basic_string.tcc \
   /usr/include/c++/4.2.1/streambuf \
   /usr/include/c++/4.2.1/bits/streambuf.tcc \
   /usr/include/c++/4.2.1/bits/basic_ios.h \
@@ -333,7 +338,7 @@ ndn-cpp/security/key-chain.lo ndn-cpp/security/key-chain.o:  \
   /usr/include/c++/4.2.1/cassert \
   /usr/local/include/boost/config/no_tr1/functional.hpp \
   /usr/local/include/boost/function/function_base.hpp \
-  /usr/local/include/boost/integer.hpp \
+  /usr/include/c++/4.2.1/stdexcept /usr/local/include/boost/integer.hpp \
   /usr/local/include/boost/integer_fwd.hpp \
   /usr/local/include/boost/limits.hpp \
   /usr/local/include/boost/cstdint.hpp \
@@ -376,9 +381,9 @@ ndn-cpp/security/key-chain.lo ndn-cpp/security/key-chain.o:  \
   /usr/local/include/boost/bind/bind_mf_cc.hpp \
   /usr/local/include/boost/bind/bind_mf2_cc.hpp \
   /usr/local/include/boost/bind/placeholders.hpp \
-  ndn-cpp/security/../encoding/../util/dynamic-uchar-vector.hpp \
+  ndn-cpp/security/../encoding/../util/dynamic-uint8-vector.hpp \
   ndn-cpp/security/../encoding/../util/../common.hpp \
-  ndn-cpp/security/../encoding/../util/../c/util/dynamic-uchar-array.h \
+  ndn-cpp/security/../encoding/../util/../c/util/dynamic-uint8-array.h \
   ndn-cpp/security/../encoding/../c/encoding/binary-xml-encoder.h \
   ndn-cpp/security/../sha256-with-rsa-signature.hpp \
   ndn-cpp/security/../data.hpp ndn-cpp/security/../common.hpp \
@@ -393,39 +398,75 @@ ndn-cpp/security/key-chain.lo ndn-cpp/security/key-chain.o:  \
   ndn-cpp/security/../key.hpp ndn-cpp/security/../c/key.h \
   ndn-cpp/security/../publisher-public-key-digest.hpp \
   ndn-cpp/security/../c/publisher-public-key-digest.h \
-  ndn-cpp/security/key-chain.hpp ndn-cpp/security/../data.hpp \
-  ndn-cpp/security/../face.hpp ndn-cpp/security/../node.hpp \
-  ndn-cpp/security/../interest.hpp ndn-cpp/security/../c/interest.h \
-  ndn-cpp/security/../c/name.h \
-  ndn-cpp/security/../c/publisher-public-key-digest.h \
-  ndn-cpp/security/../transport/tcp-transport.hpp \
-  ndn-cpp/security/../transport/../c/transport/tcp-transport.h \
-  ndn-cpp/security/../transport/../c/transport/socket-transport.h \
+  ndn-cpp/security/../util/logging.hpp \
+  ndn-cpp/security/../util/../common.hpp \
+  ndn-cpp/security/policy/policy-manager.hpp \
+  ndn-cpp/security/policy/../../data.hpp \
+  ndn-cpp/security/policy/../key-chain.hpp \
+  ndn-cpp/security/policy/../../data.hpp \
+  ndn-cpp/security/policy/../../face.hpp \
+  ndn-cpp/security/policy/../../node.hpp \
+  ndn-cpp/security/policy/../../common.hpp \
+  ndn-cpp/security/policy/../../interest.hpp \
+  ndn-cpp/security/policy/../../name.hpp \
+  ndn-cpp/security/policy/../../publisher-public-key-digest.hpp \
+  ndn-cpp/security/policy/../../c/interest.h \
+  ndn-cpp/security/policy/../../c/name.h \
+  ndn-cpp/security/policy/../../c/publisher-public-key-digest.h \
+  ndn-cpp/security/policy/../../data.hpp \
+  ndn-cpp/security/policy/../../transport/tcp-transport.hpp \
+  ndn-cpp/security/policy/../../transport/../c/transport/tcp-transport.h \
+  ndn-cpp/security/policy/../../transport/../c/transport/socket-transport.h \
   /usr/include/sys/socket.h /usr/include/machine/_param.h \
   /usr/include/i386/_param.h \
-  ndn-cpp/security/../transport/../c/transport/../errors.h \
-  ndn-cpp/security/../transport/../c/encoding/binary-xml-element-reader.h \
-  ndn-cpp/security/../transport/../c/encoding/../errors.h \
-  ndn-cpp/security/../transport/../c/encoding/binary-xml-structure-decoder.h \
-  ndn-cpp/security/../transport/../c/encoding/../util/dynamic-uchar-array.h \
-  ndn-cpp/security/../transport/transport.hpp \
-  ndn-cpp/security/../encoding/binary-xml-element-reader.hpp \
-  ndn-cpp/security/../encoding/../c/encoding/binary-xml-element-reader.h \
-  ndn-cpp/security/identity/identity-manager.hpp \
-  ndn-cpp/security/identity/../../data.hpp \
-  ndn-cpp/security/identity/private-key-storage.hpp \
-  ndn-cpp/security/identity/../../util/blob.hpp \
-  ndn-cpp/security/identity/../security-common.hpp
+  ndn-cpp/security/policy/../../transport/../c/transport/../common.h \
+  ndn-cpp/security/policy/../../transport/../c/transport/../errors.h \
+  ndn-cpp/security/policy/../../transport/../c/encoding/binary-xml-element-reader.h \
+  ndn-cpp/security/policy/../../transport/../c/encoding/../errors.h \
+  ndn-cpp/security/policy/../../transport/../c/encoding/binary-xml-structure-decoder.h \
+  ndn-cpp/security/policy/../../transport/../c/encoding/../common.h \
+  ndn-cpp/security/policy/../../transport/../c/encoding/../util/dynamic-uint8-array.h \
+  ndn-cpp/security/policy/../../transport/transport.hpp \
+  ndn-cpp/security/policy/../../encoding/binary-xml-element-reader.hpp \
+  ndn-cpp/security/policy/../../encoding/../c/encoding/binary-xml-element-reader.h \
+  ndn-cpp/security/policy/../../forwarding-flags.hpp \
+  ndn-cpp/security/policy/../../c/forwarding-flags.h \
+  ndn-cpp/security/policy/../identity/identity-manager.hpp \
+  ndn-cpp/security/policy/../identity/../certificate/certificate.hpp \
+  ndn-cpp/security/policy/../identity/../certificate/../../data.hpp \
+  ndn-cpp/security/policy/../identity/identity-storage.hpp \
+  ndn-cpp/security/policy/../identity/../../name.hpp \
+  ndn-cpp/security/policy/../identity/../security-common.hpp \
+  ndn-cpp/security/policy/../identity/../certificate/public-key.hpp \
+  ndn-cpp/security/policy/../identity/../certificate/../../util/blob.hpp \
+  ndn-cpp/security/policy/../identity/../certificate/oid.hpp \
+  ndn-cpp/security/policy/../identity/../certificate/../security-common.hpp \
+  ndn-cpp/security/policy/../identity/private-key-storage.hpp \
+  ndn-cpp/security/policy/../identity/../../util/blob.hpp \
+  ndn-cpp/security/policy/../encryption/encryption-manager.hpp \
+  ndn-cpp/security/policy/../encryption/../../name.hpp \
+  ndn-cpp/security/policy/../encryption/../security-common.hpp \
+  ndn-cpp/security/security-exception.hpp ndn-cpp/security/key-chain.hpp
 
-/usr/include/c++/4.2.1/stdexcept:
+ndn-cpp/security/../c/util/crypto.h:
 
-/usr/include/c++/4.2.1/exception:
+/usr/include/openssl/ssl.h:
 
-/usr/include/c++/4.2.1/bits/c++config.h:
+/usr/include/AvailabilityMacros.h:
 
-/usr/include/c++/4.2.1/bits/os_defines.h:
+/usr/include/openssl/e_os2.h:
 
-/usr/include/unistd.h:
+/usr/include/openssl/opensslconf.h:
+
+/usr/include/openssl/comp.h:
+
+/usr/include/openssl/crypto.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
 
 /usr/include/_types.h:
 
@@ -441,69 +482,19 @@ ndn-cpp/security/key-chain.lo ndn-cpp/security/key-chain.o:  \
 
 /usr/include/i386/_types.h:
 
-/usr/include/sys/unistd.h:
-
-/usr/include/Availability.h:
-
-/usr/include/AvailabilityInternal.h:
-
-/usr/include/sys/select.h:
-
-/usr/include/sys/appleapiopts.h:
-
-/usr/include/sys/_structs.h:
-
-/usr/include/sys/_select.h:
-
-/usr/include/c++/4.2.1/bits/cpu_defines.h:
-
-/usr/include/c++/4.2.1/string:
-
-/usr/include/c++/4.2.1/bits/stringfwd.h:
-
-/usr/include/c++/4.2.1/bits/char_traits.h:
-
-/usr/include/c++/4.2.1/cstring:
-
-/usr/include/c++/4.2.1/cstddef:
-
-/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h:
-
-/usr/include/string.h:
-
-/usr/include/strings.h:
-
-/usr/include/c++/4.2.1/bits/stl_algobase.h:
-
-/usr/include/c++/4.2.1/climits:
-
-/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/limits.h:
-
-/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/syslimits.h:
-
-/usr/include/limits.h:
-
-/usr/include/machine/limits.h:
-
-/usr/include/i386/limits.h:
-
-/usr/include/i386/_limits.h:
-
-/usr/include/sys/syslimits.h:
-
-/usr/include/c++/4.2.1/cstdlib:
-
-/usr/include/stdlib.h:
-
 /usr/include/sys/wait.h:
 
 /usr/include/sys/signal.h:
+
+/usr/include/sys/appleapiopts.h:
 
 /usr/include/machine/signal.h:
 
 /usr/include/i386/signal.h:
 
 /usr/include/i386/_structs.h:
+
+/usr/include/sys/_structs.h:
 
 /usr/include/machine/_structs.h:
 
@@ -529,133 +520,7 @@ ndn-cpp/security/key-chain.lo ndn-cpp/security/key-chain.o:  \
 
 /usr/include/i386/_types.h:
 
-/usr/include/c++/4.2.1/iosfwd:
-
-/usr/include/c++/4.2.1/bits/c++locale.h:
-
-/usr/include/c++/4.2.1/clocale:
-
-/usr/include/locale.h:
-
-/usr/include/_locale.h:
-
-/usr/include/c++/4.2.1/cstdio:
-
 /usr/include/stdio.h:
-
-/usr/include/c++/4.2.1/cstdarg:
-
-/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h:
-
-/usr/include/c++/4.2.1/bits/c++io.h:
-
-/usr/include/c++/4.2.1/bits/gthr.h:
-
-/usr/include/c++/4.2.1/bits/gthr-default.h:
-
-/usr/include/pthread.h:
-
-/usr/include/pthread_impl.h:
-
-/usr/include/sched.h:
-
-/usr/include/time.h:
-
-/usr/include/_structs.h:
-
-/usr/include/c++/4.2.1/cctype:
-
-/usr/include/ctype.h:
-
-/usr/include/runetype.h:
-
-/usr/include/c++/4.2.1/bits/postypes.h:
-
-/usr/include/c++/4.2.1/cwchar:
-
-/usr/include/c++/4.2.1/ctime:
-
-/usr/include/wchar.h:
-
-/usr/include/_wctype.h:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/4.2.1/bits/functexcept.h:
-
-/usr/include/c++/4.2.1/exception_defines.h:
-
-/usr/include/c++/4.2.1/bits/stl_pair.h:
-
-/usr/include/c++/4.2.1/bits/cpp_type_traits.h:
-
-/usr/include/c++/4.2.1/ext/type_traits.h:
-
-/usr/include/c++/4.2.1/utility:
-
-/usr/include/c++/4.2.1/bits/stl_relops.h:
-
-/usr/include/c++/4.2.1/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/4.2.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/4.2.1/bits/concept_check.h:
-
-/usr/include/c++/4.2.1/bits/stl_iterator.h:
-
-/usr/include/c++/4.2.1/debug/debug.h:
-
-/usr/include/c++/4.2.1/memory:
-
-/usr/include/c++/4.2.1/bits/allocator.h:
-
-/usr/include/c++/4.2.1/bits/c++allocator.h:
-
-/usr/include/c++/4.2.1/ext/new_allocator.h:
-
-/usr/include/c++/4.2.1/new:
-
-/usr/include/c++/4.2.1/bits/stl_construct.h:
-
-/usr/include/c++/4.2.1/bits/stl_uninitialized.h:
-
-/usr/include/c++/4.2.1/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/4.2.1/limits:
-
-/usr/include/c++/4.2.1/bits/ostream_insert.h:
-
-/usr/include/c++/4.2.1/bits/stl_function.h:
-
-/usr/include/c++/4.2.1/bits/basic_string.h:
-
-/usr/include/c++/4.2.1/ext/atomicity.h:
-
-/usr/include/c++/4.2.1/bits/atomic_word.h:
-
-/usr/include/c++/4.2.1/algorithm:
-
-/usr/include/c++/4.2.1/bits/stl_algo.h:
-
-/usr/include/c++/4.2.1/bits/stl_heap.h:
-
-/usr/include/c++/4.2.1/bits/stl_tempbuf.h:
-
-/usr/include/c++/4.2.1/bits/basic_string.tcc:
-
-ndn-cpp/security/../c/util/crypto.h:
-
-/usr/include/openssl/ssl.h:
-
-/usr/include/AvailabilityMacros.h:
-
-/usr/include/openssl/e_os2.h:
-
-/usr/include/openssl/opensslconf.h:
-
-/usr/include/openssl/comp.h:
-
-/usr/include/openssl/crypto.h:
 
 /usr/include/openssl/stack.h:
 
@@ -669,9 +534,13 @@ ndn-cpp/security/../c/util/crypto.h:
 
 /usr/include/openssl/bio.h:
 
+/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stdarg.h:
+
 /usr/include/openssl/x509.h:
 
 /usr/include/openssl/buffer.h:
+
+/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/stddef.h:
 
 /usr/include/sys/types.h:
 
@@ -682,6 +551,10 @@ ndn-cpp/security/../c/util/crypto.h:
 /usr/include/openssl/obj_mac.h:
 
 /usr/include/openssl/asn1.h:
+
+/usr/include/time.h:
+
+/usr/include/_structs.h:
 
 /usr/include/openssl/bn.h:
 
@@ -725,9 +598,23 @@ ndn-cpp/security/../c/util/crypto.h:
 
 /usr/include/openssl/pqueue.h:
 
+/usr/include/string.h:
+
+/usr/include/strings.h:
+
 /usr/include/sys/time.h:
 
+/usr/include/sys/_select.h:
+
 /usr/include/openssl/ssl23.h:
+
+ndn-cpp/security/../c/util/../common.h:
+
+ndn-cpp/security/../c/util/../../../config.h:
+
+/usr/include/stdint.h:
+
+/usr/include/memory.h:
 
 ndn-cpp/security/../c/encoding/binary-xml-data.h:
 
@@ -739,27 +626,147 @@ ndn-cpp/security/../c/encoding/../name.h:
 
 ndn-cpp/security/../c/encoding/../publisher-public-key-digest.h:
 
+ndn-cpp/security/../c/encoding/../common.h:
+
 ndn-cpp/security/../c/encoding/../key.h:
 
 ndn-cpp/security/../c/encoding/binary-xml-encoder.h:
 
-ndn-cpp/security/../c/encoding/../util/dynamic-uchar-array.h:
+ndn-cpp/security/../c/encoding/../util/dynamic-uint8-array.h:
 
 ndn-cpp/security/../c/encoding/../util/../errors.h:
 
 ndn-cpp/security/../c/encoding/../util/ndn_memory.h:
 
-ndn-cpp/security/../c/encoding/../util/../../../config.h:
-
-/usr/include/memory.h:
+ndn-cpp/security/../c/encoding/../util/../common.h:
 
 ndn-cpp/security/../c/encoding/binary-xml.h:
 
 ndn-cpp/security/../c/encoding/binary-xml-decoder.h:
 
+ndn-cpp/security/../c/encoding/../common.h:
+
 ndn-cpp/security/../encoding/binary-xml-encoder.hpp:
 
 /usr/include/c++/4.2.1/vector:
+
+/usr/include/c++/4.2.1/bits/functexcept.h:
+
+/usr/include/c++/4.2.1/bits/c++config.h:
+
+/usr/include/c++/4.2.1/bits/os_defines.h:
+
+/usr/include/unistd.h:
+
+/usr/include/sys/unistd.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/c++/4.2.1/bits/cpu_defines.h:
+
+/usr/include/c++/4.2.1/exception_defines.h:
+
+/usr/include/c++/4.2.1/bits/stl_algobase.h:
+
+/usr/include/c++/4.2.1/cstring:
+
+/usr/include/c++/4.2.1/cstddef:
+
+/usr/include/c++/4.2.1/climits:
+
+/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/limits.h:
+
+/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/machine/limits.h:
+
+/usr/include/i386/limits.h:
+
+/usr/include/i386/_limits.h:
+
+/usr/include/sys/syslimits.h:
+
+/usr/include/c++/4.2.1/cstdlib:
+
+/usr/include/c++/4.2.1/iosfwd:
+
+/usr/include/c++/4.2.1/bits/c++locale.h:
+
+/usr/include/c++/4.2.1/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/_locale.h:
+
+/usr/include/c++/4.2.1/cstdio:
+
+/usr/include/c++/4.2.1/cstdarg:
+
+/usr/include/c++/4.2.1/bits/c++io.h:
+
+/usr/include/c++/4.2.1/bits/gthr.h:
+
+/usr/include/c++/4.2.1/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/pthread_impl.h:
+
+/usr/include/sched.h:
+
+/usr/include/c++/4.2.1/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/runetype.h:
+
+/usr/include/c++/4.2.1/bits/stringfwd.h:
+
+/usr/include/c++/4.2.1/bits/postypes.h:
+
+/usr/include/c++/4.2.1/cwchar:
+
+/usr/include/c++/4.2.1/ctime:
+
+/usr/include/wchar.h:
+
+/usr/include/_wctype.h:
+
+/usr/include/c++/4.2.1/bits/stl_pair.h:
+
+/usr/include/c++/4.2.1/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.2.1/ext/type_traits.h:
+
+/usr/include/c++/4.2.1/utility:
+
+/usr/include/c++/4.2.1/bits/stl_relops.h:
+
+/usr/include/c++/4.2.1/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.2.1/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.2.1/bits/concept_check.h:
+
+/usr/include/c++/4.2.1/bits/stl_iterator.h:
+
+/usr/include/c++/4.2.1/debug/debug.h:
+
+/usr/include/c++/4.2.1/bits/allocator.h:
+
+/usr/include/c++/4.2.1/bits/c++allocator.h:
+
+/usr/include/c++/4.2.1/ext/new_allocator.h:
+
+/usr/include/c++/4.2.1/new:
+
+/usr/include/c++/4.2.1/exception:
+
+/usr/include/c++/4.2.1/bits/stl_construct.h:
+
+/usr/include/c++/4.2.1/bits/stl_uninitialized.h:
 
 /usr/include/c++/4.2.1/bits/stl_vector.h:
 
@@ -769,7 +776,7 @@ ndn-cpp/security/../encoding/binary-xml-encoder.hpp:
 
 ndn-cpp/security/../encoding/../common.hpp:
 
-ndn-cpp/security/../encoding/../../config.h:
+ndn-cpp/security/../encoding/../c/common.h:
 
 /usr/local/include/boost/shared_ptr.hpp:
 
@@ -799,6 +806,12 @@ ndn-cpp/security/../encoding/../../config.h:
 
 /usr/local/include/boost/config/no_tr1/memory.hpp:
 
+/usr/include/c++/4.2.1/memory:
+
+/usr/include/c++/4.2.1/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/4.2.1/limits:
+
 /usr/local/include/boost/assert.hpp:
 
 /usr/include/assert.h:
@@ -809,11 +822,35 @@ ndn-cpp/security/../encoding/../../config.h:
 
 /usr/include/c++/4.2.1/ios:
 
+/usr/include/c++/4.2.1/bits/char_traits.h:
+
 /usr/include/c++/4.2.1/bits/localefwd.h:
 
 /usr/include/c++/4.2.1/bits/ios_base.h:
 
+/usr/include/c++/4.2.1/ext/atomicity.h:
+
+/usr/include/c++/4.2.1/bits/atomic_word.h:
+
 /usr/include/c++/4.2.1/bits/locale_classes.h:
+
+/usr/include/c++/4.2.1/string:
+
+/usr/include/c++/4.2.1/bits/ostream_insert.h:
+
+/usr/include/c++/4.2.1/bits/stl_function.h:
+
+/usr/include/c++/4.2.1/bits/basic_string.h:
+
+/usr/include/c++/4.2.1/algorithm:
+
+/usr/include/c++/4.2.1/bits/stl_algo.h:
+
+/usr/include/c++/4.2.1/bits/stl_heap.h:
+
+/usr/include/c++/4.2.1/bits/stl_tempbuf.h:
+
+/usr/include/c++/4.2.1/bits/basic_string.tcc:
 
 /usr/include/c++/4.2.1/streambuf:
 
@@ -1223,6 +1260,8 @@ ndn-cpp/security/../encoding/../../config.h:
 
 /usr/local/include/boost/function/function_base.hpp:
 
+/usr/include/c++/4.2.1/stdexcept:
+
 /usr/local/include/boost/integer.hpp:
 
 /usr/local/include/boost/integer_fwd.hpp:
@@ -1309,11 +1348,11 @@ ndn-cpp/security/../encoding/../../config.h:
 
 /usr/local/include/boost/bind/placeholders.hpp:
 
-ndn-cpp/security/../encoding/../util/dynamic-uchar-vector.hpp:
+ndn-cpp/security/../encoding/../util/dynamic-uint8-vector.hpp:
 
 ndn-cpp/security/../encoding/../util/../common.hpp:
 
-ndn-cpp/security/../encoding/../util/../c/util/dynamic-uchar-array.h:
+ndn-cpp/security/../encoding/../util/../c/util/dynamic-uint8-array.h:
 
 ndn-cpp/security/../encoding/../c/encoding/binary-xml-encoder.h:
 
@@ -1353,27 +1392,43 @@ ndn-cpp/security/../publisher-public-key-digest.hpp:
 
 ndn-cpp/security/../c/publisher-public-key-digest.h:
 
-ndn-cpp/security/key-chain.hpp:
+ndn-cpp/security/../util/logging.hpp:
 
-ndn-cpp/security/../data.hpp:
+ndn-cpp/security/../util/../common.hpp:
 
-ndn-cpp/security/../face.hpp:
+ndn-cpp/security/policy/policy-manager.hpp:
 
-ndn-cpp/security/../node.hpp:
+ndn-cpp/security/policy/../../data.hpp:
 
-ndn-cpp/security/../interest.hpp:
+ndn-cpp/security/policy/../key-chain.hpp:
 
-ndn-cpp/security/../c/interest.h:
+ndn-cpp/security/policy/../../data.hpp:
 
-ndn-cpp/security/../c/name.h:
+ndn-cpp/security/policy/../../face.hpp:
 
-ndn-cpp/security/../c/publisher-public-key-digest.h:
+ndn-cpp/security/policy/../../node.hpp:
 
-ndn-cpp/security/../transport/tcp-transport.hpp:
+ndn-cpp/security/policy/../../common.hpp:
 
-ndn-cpp/security/../transport/../c/transport/tcp-transport.h:
+ndn-cpp/security/policy/../../interest.hpp:
 
-ndn-cpp/security/../transport/../c/transport/socket-transport.h:
+ndn-cpp/security/policy/../../name.hpp:
+
+ndn-cpp/security/policy/../../publisher-public-key-digest.hpp:
+
+ndn-cpp/security/policy/../../c/interest.h:
+
+ndn-cpp/security/policy/../../c/name.h:
+
+ndn-cpp/security/policy/../../c/publisher-public-key-digest.h:
+
+ndn-cpp/security/policy/../../data.hpp:
+
+ndn-cpp/security/policy/../../transport/tcp-transport.hpp:
+
+ndn-cpp/security/policy/../../transport/../c/transport/tcp-transport.h:
+
+ndn-cpp/security/policy/../../transport/../c/transport/socket-transport.h:
 
 /usr/include/sys/socket.h:
 
@@ -1381,28 +1436,60 @@ ndn-cpp/security/../transport/../c/transport/socket-transport.h:
 
 /usr/include/i386/_param.h:
 
-ndn-cpp/security/../transport/../c/transport/../errors.h:
+ndn-cpp/security/policy/../../transport/../c/transport/../common.h:
 
-ndn-cpp/security/../transport/../c/encoding/binary-xml-element-reader.h:
+ndn-cpp/security/policy/../../transport/../c/transport/../errors.h:
 
-ndn-cpp/security/../transport/../c/encoding/../errors.h:
+ndn-cpp/security/policy/../../transport/../c/encoding/binary-xml-element-reader.h:
 
-ndn-cpp/security/../transport/../c/encoding/binary-xml-structure-decoder.h:
+ndn-cpp/security/policy/../../transport/../c/encoding/../errors.h:
 
-ndn-cpp/security/../transport/../c/encoding/../util/dynamic-uchar-array.h:
+ndn-cpp/security/policy/../../transport/../c/encoding/binary-xml-structure-decoder.h:
 
-ndn-cpp/security/../transport/transport.hpp:
+ndn-cpp/security/policy/../../transport/../c/encoding/../common.h:
 
-ndn-cpp/security/../encoding/binary-xml-element-reader.hpp:
+ndn-cpp/security/policy/../../transport/../c/encoding/../util/dynamic-uint8-array.h:
 
-ndn-cpp/security/../encoding/../c/encoding/binary-xml-element-reader.h:
+ndn-cpp/security/policy/../../transport/transport.hpp:
 
-ndn-cpp/security/identity/identity-manager.hpp:
+ndn-cpp/security/policy/../../encoding/binary-xml-element-reader.hpp:
 
-ndn-cpp/security/identity/../../data.hpp:
+ndn-cpp/security/policy/../../encoding/../c/encoding/binary-xml-element-reader.h:
 
-ndn-cpp/security/identity/private-key-storage.hpp:
+ndn-cpp/security/policy/../../forwarding-flags.hpp:
 
-ndn-cpp/security/identity/../../util/blob.hpp:
+ndn-cpp/security/policy/../../c/forwarding-flags.h:
 
-ndn-cpp/security/identity/../security-common.hpp:
+ndn-cpp/security/policy/../identity/identity-manager.hpp:
+
+ndn-cpp/security/policy/../identity/../certificate/certificate.hpp:
+
+ndn-cpp/security/policy/../identity/../certificate/../../data.hpp:
+
+ndn-cpp/security/policy/../identity/identity-storage.hpp:
+
+ndn-cpp/security/policy/../identity/../../name.hpp:
+
+ndn-cpp/security/policy/../identity/../security-common.hpp:
+
+ndn-cpp/security/policy/../identity/../certificate/public-key.hpp:
+
+ndn-cpp/security/policy/../identity/../certificate/../../util/blob.hpp:
+
+ndn-cpp/security/policy/../identity/../certificate/oid.hpp:
+
+ndn-cpp/security/policy/../identity/../certificate/../security-common.hpp:
+
+ndn-cpp/security/policy/../identity/private-key-storage.hpp:
+
+ndn-cpp/security/policy/../identity/../../util/blob.hpp:
+
+ndn-cpp/security/policy/../encryption/encryption-manager.hpp:
+
+ndn-cpp/security/policy/../encryption/../../name.hpp:
+
+ndn-cpp/security/policy/../encryption/../security-common.hpp:
+
+ndn-cpp/security/security-exception.hpp:
+
+ndn-cpp/security/key-chain.hpp:

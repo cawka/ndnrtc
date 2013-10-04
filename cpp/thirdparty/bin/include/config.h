@@ -31,6 +31,12 @@
 /* 1 if have memset in memory.h. */
 #define HAVE_MEMSET 1
 
+/* Have the SQLITE3 library */
+#define HAVE_SQLITE3 /**/
+
+/* 1 if have stdint.h. */
+#define HAVE_STDINT 1
+
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
 
@@ -63,13 +69,13 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT ""
+#define PACKAGE_BUGREPORT "ndn-lib@lists.cs.ucla.edu"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "ndn-cpp"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "ndn-cpp 0.5"
+#define PACKAGE_STRING "ndn-cpp 0.2"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "ndn-cpp"
@@ -78,7 +84,7 @@
 #define PACKAGE_URL "https://github.com/named-data/ndn-cpp"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.5"
+#define PACKAGE_VERSION "0.2"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
