@@ -1,4 +1,0 @@
-ndn-cpp/c/errors.lo ndn-cpp/c/errors.o: ndn-cpp/c/errors.c \
-  ndn-cpp/c/errors.h
-
-ndn-cpp/c/errors.h:
