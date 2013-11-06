@@ -284,7 +284,7 @@ testall : $(TESTS:%=build-%)
 
 ${TESTS} : ; $(BIN_PATH)/$@
 
-testrun : testall ${TESTS}
+testrun : libndnrtc testall ${TESTS}
 	
 	
 # Builds gtest.a and gtest_main.a.
