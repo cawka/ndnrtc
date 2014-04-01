@@ -33,6 +33,12 @@ echo "  consumer logs ready ["$CFOLDER/vconsumer.log"]"
 
 catAndGrep $CLOG "\[vconsumer-buffer-pqueue\]" $CFOLDER/pqueue.log
 echo "  playout queue logs ready ["$CFOLDER/pqueue.log"]"
+
+catAndGrep $CLOG "\[STAT.\]\[playout\]" $CFOLDER/playout.stat.log
+echo "  playout statistics ready ["$CFOLDER/playout.stat.log"]"
+
+catAndGrep $CLOG "\[STAT.\]" $CFOLDER/all.stat.log
+echo "  all statistics ready ["$CFOLDER/all.stat.log"]"
 }
 
 function refineProducer {
