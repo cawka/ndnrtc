@@ -93,4 +93,5 @@ fi
 echo "compressing logs..."
 tar -czf $LOGSFOLDER.tar.gz $LOGSFOLDER
 
+echo "cd $LOGSFOLDER" | pbcopy
 echo "logs are stored in "$LOGSFOLDER.tar.gz
