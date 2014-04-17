@@ -19,20 +19,32 @@ echo "* refining logs for consumer "$1" ["$CFOLDER"] ..."
 
 mkdir -p $CFOLDER
 
-catAndGrep $CLOG "vconsumer-pipeliner" $CFOLDER/pipeliner.log
-echo "  pipeliner logs ready ["$CFOLDER/pipeliner.log"]"
+catAndGrep $CLOG "vconsumer-pipeliner" $CFOLDER/vpipeliner.log
+echo "  pipeliner logs ready ["$CFOLDER/vpipeliner.log"]"
+
+catAndGrep $CLOG "aconsumer-pipeliner" $CFOLDER/apipeliner.log
+echo "  pipeliner logs ready ["$CFOLDER/apipeliner.log"]"
 
 catAndGrep $CLOG "cchannel-iqueue" $CFOLDER/iqueue.log
 echo "  interest queue logs ready ["$CFOLDER/iqueue.log"]"
 
-catAndGrep $CLOG "vconsumer-buffer" $CFOLDER/buffer.log
-echo "  buffer logs ready ["$CFOLDER/buffer.log"]"
+catAndGrep $CLOG "vconsumer-buffer" $CFOLDER/vbuffer.log
+echo "  buffer logs ready ["$CFOLDER/vbuffer.log"]"
+
+catAndGrep $CLOG "aconsumer-buffer" $CFOLDER/abuffer.log
+echo "  buffer logs ready ["$CFOLDER/abuffer.log"]"
 
 catAndGrep $CLOG "\[vconsumer\]" $CFOLDER/vconsumer.log
 echo "  consumer logs ready ["$CFOLDER/vconsumer.log"]"
 
-catAndGrep $CLOG "\[vconsumer-buffer-pqueue\]" $CFOLDER/pqueue.log
-echo "  playout queue logs ready ["$CFOLDER/pqueue.log"]"
+catAndGrep $CLOG "\[aconsumer\]" $CFOLDER/aconsumer.log
+echo "  consumer logs ready ["$CFOLDER/aconsumer.log"]"
+
+catAndGrep $CLOG "\[vconsumer-buffer-pqueue\]" $CFOLDER/vpqueue.log
+echo "  playout queue logs ready ["$CFOLDER/vpqueue.log"]"
+
+catAndGrep $CLOG "\[aconsumer-buffer-pqueue\]" $CFOLDER/apqueue.log
+echo "  playout queue logs ready ["$CFOLDER/apqueue.log"]"
 
 catAndGrep $CLOG "\[STAT.\]\[playout\]" $CFOLDER/playout.stat.log
 echo "  playout statistics ready ["$CFOLDER/playout.stat.log"]"
@@ -54,6 +66,12 @@ echo "  producer logs ready ["$PFOLDER/vsender.log"]"
 
 catAndGrep $PLOG "\[STAT.\]\[vsender\]" $PFOLDER/vsender.stat.log
 echo "  producer statistics ready ["$PFOLDER/vsender.stat.log"]"
+
+catAndGrep $PLOG "\[asender\]" $PFOLDER/asender.log
+echo "  producer logs ready ["$PFOLDER/asender.log"]"
+
+catAndGrep $PLOG "\[STAT.\]\[asender\]" $PFOLDER/asender.stat.log
+echo "  producer statistics ready ["$PFOLDER/asender.stat.log"]"
 }
 
 echo "copying logs into ["$LOGSFOLDER/raw"]"
